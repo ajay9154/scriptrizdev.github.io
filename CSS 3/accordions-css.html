@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Accordions Design in HTML CSS & JavaScript</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header id="header">
+    <nav class="stickynav">
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo"><a href="#">wynk<span class="logo-half-name">Code</span></a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">wynk<span class="logo-half-name">Code</span></span>
+            <i class='bx bx-x'></i>
+          </div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#">Reference</a>
+              <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">SCSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Shopify</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">jquery</a></li>
+                <!--- <li class="more">
+                                        <span><a href="#">More</a>
+                                            <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                        </span>
+                                        <ul class="more-sub-menu sub-menu">
+                                            <li><a href="#">Neumorphism</a></li>
+                                            <li><a href="#">Pre-loader</a></li>
+                                            <li><a href="#">Glassmorphism</a></li>
+                                        </ul>
+                                    </li>-->
+              </ul>
+            </li>
+            <li>
+              <a href="#">Web Design</a>
+              <i class='bx bxs-chevron-down js-arrow arrow '></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">Website Template</a></li>
+                <li><a href="#">CSS Templates</a></li>
+                <li><a href="#">JavaScript Project</a></li>
+                <li><a href="#">Glassmorphism</a></li>
+                <li><a href="#">Neumorphism</a></li>
+                <li><a href="#">Color Pallets</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search...">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../js/navscript.js"></script>
+  <script src="../js/sticky.js"></script>
+
+
+  <section>
+    <div class="container">
+      <div class="main-container-content">
+        <div class="flex-box">
+          <div class="main-container-1-content">
+            <div class="main-container-nav-menu">
+              <ul>
+                <li><a href="">HTML</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">CSS</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">JavaScript</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">Python</a></li>
+              </ul>
+            </div>
+            <div class="main-container-main-heading">
+              <h1>Responsive Accordions Design in HTML CSS & JavaScript</h1>
+            </div>
+            <div class="main-container-user">
+              <div class="main-container-by small-text">
+                <a>By</a>
+              </div>
+              <div class="main-container-user small-text">
+                <a>wynkCode</a>
+                <span> - </span>
+              </div>
+              <div class="main-container-date small-text">
+                <a>May 9, 2023</a>
+              </div>
+            </div>
+
+            <div class="footer-container-box-social top-social">
+              <ul>
+                <li><a class="footer-facebook" href="#"><span></span></a></li>
+                <li><a class="footer-instagram" href="#"><span></span></a></li>
+                <li><a class="footer-youtube" href="#"><span></span></a></li>
+                <li><a class="footer-twitter" href="#"><span></span></a></li>
+                <li><a class="footer-linkedin" href="#"><span></span></a></li>
+              </ul>
+            </div>
+            <div class="main-container-img">
+              <img src="../img/Accordions CSS.png" alt="Responsive Footer Image">
+            </div>
+            <div class="main-container-content-details">
+              <div class="main-container-content-para">
+                <p>Accordions are a common UI pattern used to hide or reveal content in a collapsible manner. In this tutorial, we will learn how to create responsive accordions using HTML, CSS, and JavaScript. The accordions will adjust their layout based on the screen size to provide a seamless user experience on different devices.
+              </div>
+              
+              <div class="main-container-content-page-link">
+                <h3>Step 1: Set up the HTML structure:</h3>
+                <ul>
+                  <li>Begin by creating the HTML structure for the accordions. Each accordion item will consist of a heading and a content section. Use appropriate HTML elements to represent the structure, such as <span><</span>div<span>></span> containers and <span><</span>h2<span>></span> for the headings.
+                </li>
+                  
+                </ul>
+              </div>
+             
+              <div class="main-container-content-code">
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>html</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>wynkCode - Accordions Design Using HTML CSS &amp; JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__header"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__title"</span>&gt;</span>Frequently asked questions<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__subtitle"</span>&gt;</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit earum
+            ipsam corrupti vel fuga architecto optio incidunt.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__separator"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__question"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"answer1"</span>&gt;</span>
+            What is Lorem Ipsum?
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__icon ri-arrow-drop-right-line"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"answer1"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer-inner"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer-text"</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                accumsan mauris quis aliquet sollicitudin.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__question"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"answer2"</span>&gt;</span>
+            How do I use Lorem Ipsum?
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__icon ri-arrow-drop-right-line"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"answer2"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer-inner"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer-text"</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                accumsan mauris quis aliquet sollicitudin.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__question"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"answer3"</span>&gt;</span>
+            Is Lorem Ipsum free?
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__icon ri-arrow-drop-right-line"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"answer3"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer-inner"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer-text"</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                accumsan mauris quis aliquet sollicitudin.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__question"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"answer4"</span>&gt;</span>
+            Do you offer refunds?
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__icon ri-arrow-drop-right-line"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"answer4"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer-inner"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"faq__answer-text"</span>&gt;</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                accumsan mauris quis aliquet sollicitudin.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+    </code></div></div></pre>
+              </div>
+              <div class="main-container-content-page-link">
+                <h3>Step 2: Style the accordions using CSS:</h3>
+                <ul>
+                  <li>Apply CSS styles to create the desired appearance for the accordions. This includes defining the dimensions, colors, borders, and transitions. Use CSS selectors to target the accordion elements and apply the appropriate styles.
+                </li>               
+                </ul>
+              </div>
+              <div class="main-container-content-page-link">
+                <h3>Step 3: Implement responsiveness:</h3>
+                <ul>
+                  <li>To make the accordions responsive, use CSS media queries to adjust the layout based on the screen size. Define different styles for smaller screens to ensure the accordions are displayed optimally on mobile devices and tablets.
+                </li>               
+                </ul>
+              </div>
+              
+              <div class="main-container-content-code">
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>javascript</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-keyword">const</span> faq = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'.faq'</span>);
+faq.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
+  <span class="hljs-keyword">const</span> question = event.<span class="hljs-property">target</span>.<span class="hljs-title function_">closest</span>(<span class="hljs-string">'.faq__question'</span>);
+  <span class="hljs-keyword">if</span> (!question) <span class="hljs-keyword">return</span>;
+  <span class="hljs-keyword">const</span> answer = question.<span class="hljs-property">nextElementSibling</span>;
+  <span class="hljs-keyword">const</span> currentAnswer = faq.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'.faq__answer[aria-hidden="false"]'</span>);
+
+  <span class="hljs-keyword">if</span> (currentAnswer === answer) {
+    answer.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-hidden'</span>, <span class="hljs-string">'true'</span>);
+    answer.<span class="hljs-property">parentNode</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">'faq__item--expanded'</span>);
+    question.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-expanded'</span>, <span class="hljs-string">'false'</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">if</span> (currentAnswer) {
+      currentAnswer.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-hidden'</span>, <span class="hljs-string">'true'</span>);
+      currentAnswer.<span class="hljs-property">parentNode</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">'faq__item--expanded'</span>);
+      currentAnswer.<span class="hljs-property">previousElementSibling</span>.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-expanded'</span>, <span class="hljs-string">'false'</span>);
+    }
+    answer.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-hidden'</span>, <span class="hljs-string">'false'</span>);
+    answer.<span class="hljs-property">parentNode</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">'faq__item--expanded'</span>);
+    question.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-expanded'</span>, <span class="hljs-string">'true'</span>);
+  }
+});
+</code></div></div></pre>
+              </div>
+              <div class="main-container-content-page-link">
+                <h3>Step 4: Add interactivity with JavaScript:</h3>
+                <ul>
+                  <li>Implement JavaScript functionality to enable the accordion behavior. This involves handling user interactions, such as clicks on the accordion headers, to expand or collapse the corresponding content sections. Use event listeners to capture the user actions and modify the DOM accordingly.
+                </li>               
+                </ul>
+              </div>
+             <div class="main-container-content-code">
+                <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>javascript</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-keyword">const</span> faq = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'.faq'</span>);
+                    faq.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
+                      <span class="hljs-keyword">const</span> question = event.<span class="hljs-property">target</span>.<span class="hljs-title function_">closest</span>(<span class="hljs-string">'.faq__question'</span>);
+                      <span class="hljs-keyword">if</span> (!question) <span class="hljs-keyword">return</span>;
+                      <span class="hljs-keyword">const</span> answer = question.<span class="hljs-property">nextElementSibling</span>;
+                      <span class="hljs-keyword">const</span> currentAnswer = faq.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'.faq__answer[aria-hidden="false"]'</span>);
+                    
+                      <span class="hljs-keyword">if</span> (currentAnswer === answer) {
+                        answer.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-hidden'</span>, <span class="hljs-string">'true'</span>);
+                        answer.<span class="hljs-property">parentNode</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">'faq__item--expanded'</span>);
+                        question.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-expanded'</span>, <span class="hljs-string">'false'</span>);
+                      } <span class="hljs-keyword">else</span> {
+                        <span class="hljs-keyword">if</span> (currentAnswer) {
+                          currentAnswer.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-hidden'</span>, <span class="hljs-string">'true'</span>);
+                          currentAnswer.<span class="hljs-property">parentNode</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">'faq__item--expanded'</span>);
+                          currentAnswer.<span class="hljs-property">previousElementSibling</span>.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-expanded'</span>, <span class="hljs-string">'false'</span>);
+                        }
+                        answer.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-hidden'</span>, <span class="hljs-string">'false'</span>);
+                        answer.<span class="hljs-property">parentNode</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">'faq__item--expanded'</span>);
+                        question.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'aria-expanded'</span>, <span class="hljs-string">'true'</span>);
+                      }
+                    });
+                    </code></div></div></pre>
+             </div>
+              <div class="main-container-content-para">
+                <p>By following this tutorial, you have learned how to create responsive accordions using HTML, CSS, and JavaScript. You can now apply this knowledge to enhance the user experience on your website by adding collapsible content sections that adapt to different devices. Experiment with different styles and features to customize the accordions to fit your specific design requirements.</p>
+              </div>
+            </div>
+          </div>
+          <div class="most-popular-side-bar">
+            <div class="aside-bar-section side-bar-1">
+              <div class="recent-secrtion">
+                <p>Recent Post</p>
+              </div>
+              <div class="aside-bar">
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content ">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                      <div class="social-media-icon">
+                        <ul>
+                          <li><a href=""> <i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-youtube"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-linkedin"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="aside-bar-section">
+              <div class="recent-secrtion">
+                <p>Follow Us</p>
+              </div>
+              <div class="aside-bar-social-account">
+                <div class="aside-bar-icon reveal">
+                  <i class="fa-brands fa-instagram"></i>
+                  <h3>1,750</h3>
+                  <p>Followers</p>
+                </div>
+                <div class="aside-bar-icon reveal_second">
+                  <i class="fa-brands fa-youtube"></i>
+                  <h3>212</h3>
+                  <p>Subscriber</p>
+                </div>
+                <div class="aside-bar-icon reveal_third">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <h3>600</h3>
+                  <p>Followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="aside-bar-section">
+              <div class="recent-secrtion">
+                <p>Categories</p>
+              </div>
+              <div class="aside-bar-section-tags">
+                <ul>
+                  <li><a href="">HTML5</a></li>
+                  <li><a href="">CSS3</a></li>
+                  <li><a href="">JavaScript</a></li>
+                  <li><a href="">php</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                  <li><a href="">Navigation Bar</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                  <li><a href="">CSS3</a></li>
+                  <li><a href="">php</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="home-bog-section">
+      <div class="home-blog-box">
+        <div class="recent-secrtion">
+          <p>Related Post</p>
+        </div>
+        <div class="home-blog-post">
+          <div class="home-blog-post-1 reveal">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+          <div class="home-blog-post-1 reveal_second">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+          <div class="home-blog-post-1 reveal_third">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container-section">
+      <div class="gradient-circle">
+        <span class="reveal"></span>
+        <span class="reveal"></span>
+      </div>
+      <div class="footer-container-box">
+        <div class="footer-container-box-1">
+
+          <div class="footer-container-logo">
+            <h2>
+              <a href="">wynk<span>Code</span></a>
+            </h2>
+          </div>
+          <div class="footer-container-logo-details">
+            <p>wynkCode is a blog dedicated to providing valuable and informative content about web development
+              technologies such as HTML, CSS, JavaScript, and PHP... Read more</p>
+          </div>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Company</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-social">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a class="footer-facebook" href="#"><span></span></a></li>
+            <li><a class="footer-instagram" href="#"><span></span></a></li>
+            <li><a class="footer-youtube" href="#"><span></span></a></li>
+            <li><a class="footer-twitter" href="#"><span></span></a></li>
+            <li><a class="footer-linkedin" href="#"><span></span></a></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

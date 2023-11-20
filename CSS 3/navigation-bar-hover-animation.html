@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide & Seek Tab Bar Animation</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="stickynav">
+        <div class="navbar">
+          <i class="bx bx-menu"></i>
+          <div class="logo">
+            <a href="#">wynk<span class="logo-half-name">Code</span></a>
+          </div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name"
+                >wynk<span class="logo-half-name">Code</span></span
+              >
+              <i class="bx bx-x"></i>
+            </div>
+            <ul class="links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li>
+                <a href="#">Reference</a>
+                <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">SCSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">Shopify</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Database</a></li>
+                  <li><a href="#">jquery</a></li>
+                  <!--- <li class="more">
+                                        <span><a href="#">More</a>
+                                            <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                        </span>
+                                        <ul class="more-sub-menu sub-menu">
+                                            <li><a href="#">Neumorphism</a></li>
+                                            <li><a href="#">Pre-loader</a></li>
+                                            <li><a href="#">Glassmorphism</a></li>
+                                        </ul>
+                                    </li>-->
+                </ul>
+              </li>
+              <li>
+                <a href="#">Web Design</a>
+                <i class="bx bxs-chevron-down js-arrow arrow"></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="#">Website Template</a></li>
+                  <li><a href="#">CSS Templates</a></li>
+                  <li><a href="#">JavaScript Project</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                  <li><a href="#">Neumorphism</a></li>
+                  <li><a href="#">Color Pallets</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Blog</a></li>
+
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class="bx bx-search"></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../js/navscript.js"></script>
+    <script src="../js/sticky.js"></script>
+
+    <section>
+      <div class="container">
+        <div class="main-container-content">
+          <div class="flex-box">
+            <div class="main-container-1-content">
+              <div class="main-container-nav-menu">
+                <ul>
+                  <li><a href="">HTML</a></li>
+                  <span><i class="fa fa-chevron-right"></i></span>
+                  <li><a href="">CSS</a></li>
+                  <span><i class="fa fa-chevron-right"></i></span>
+                  <li><a href="">JavaScript</a></li>
+                  <span><i class="fa fa-chevron-right"></i></span>
+                  <li><a href="">Python</a></li>
+                </ul>
+              </div>
+              <div class="main-container-main-heading">
+                <h1>Sticky Navigation Bar On Scroll Using HTML, CSS And JavaScript.</h1>
+              </div>
+              <div class="main-container-user">
+                <div class="main-container-by small-text">
+                  <a>By</a>
+                </div>
+                <div class="main-container-user small-text">
+                  <a>wynkCode</a>
+                  <span> - </span>
+                </div>
+                <div class="main-container-date small-text">
+                  <a>May 9, 2023</a>
+                </div>
+              </div>
+
+              <div class="footer-container-box-social top-social">
+                <ul>
+                  <li>
+                    <a class="footer-facebook" href="#"><span></span></a>
+                  </li>
+                  <li>
+                    <a class="footer-instagram" href="#"><span></span></a>
+                  </li>
+                  <li>
+                    <a class="footer-youtube" href="#"><span></span></a>
+                  </li>
+                  <li>
+                    <a class="footer-twitter" href="#"><span></span></a>
+                  </li>
+                  <li>
+                    <a class="footer-linkedin" href="#"><span></span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-container-img best-box-shadow">
+                <img src="../img/Sticky Navbar.png" alt="CSS Magic Indicator" />
+              </div>
+              <div class="main-container-content-details">
+                <div class="main-container-content-para">
+                  <p>
+                    The Sticky Navigation Bar on Scroll is a dynamic web component built using HTML, CSS, and JavaScript that enhances user experience by providing a fixed navigation bar that remains visible as the user scrolls down a web page. This navigation bar stays fixed at the top of the viewport, ensuring easy access to important links and menus throughout the scrolling process.
+                  </p>
+                </div>
+                <div class="main-container-content-para">
+                  <p>
+                    When the user initially loads the web page, the navigation bar is positioned in its default state. However, as soon as the user starts scrolling down the page, a JavaScript function is triggered. This function adds a CSS class to the navigation bar, modifying its positioning properties and making it stick to the top of the viewport.
+                  </p>
+                </div>
+                <div class="main-container-content-para">
+                  <p>
+                    By using HTML, the navigation bar is structured with semantically meaningful elements such as <pre><code><span><</span><span>nav</span><span>></span><span>,</span> <span><</span><span>ul</span><span>></span><span>, </span><span><</span><span>li</span><span>></span></code></pre> allowing for accessibility and proper styling. CSS is employed to define the appearance of the navigation bar, including its background color, text color, font style, and dimensions. Additionally, the CSS class that is dynamically added to the navigation bar on scroll is responsible for altering its positioning to ensure it remains fixed.
+                  </p>
+                </div>
+                <div class="main-container-content-para">
+                  <p>
+                    JavaScript plays a vital role in this interactive component by detecting the user's scrolling behavior. The JavaScript function listens for scroll events, and when the user scrolls beyond a specific threshold, it adds the CSS class to the navigation bar. This class triggers the necessary style modifications defined in CSS, making the navigation bar sticky. Conversely, when the user scrolls back to the top of the page, the JavaScript function removes the CSS class, restoring the navigation bar to its default state.
+                  </p>
+                </div>
+                <div class="main-container-content-para">
+                  <p>
+                    The Sticky Navigation Bar on Scroll using HTML, CSS, and JavaScript is a valuable addition to any website, providing improved usability and seamless navigation for users as they explore content-rich pages.
+                  </p>
+                </div>
+
+
+                <div class="main-container-content-page-link">
+                  <h3>You might like this</h3>
+                  <ul>
+                    <li><a href="">Owl-carousel Card Slider</a></li>
+                    <li><a href="">Owl-carousel Card Slider</a></li>
+                    <li><a href="">Owl-carousel Card</a></li>
+                    <li><a href="">Owl-carousel Card Slider</a></li>
+                    <li><a href="">Owl-carousel Card der</a></li>
+                  </ul>
+                </div>
+                <div class="main-container-content-para">
+                  <h2>
+                    Sticky Navigation Bar On Scroll Using HTML, CSS And JavaScript
+                    [Source Codes]
+                  </h2>
+                  <p>
+                    To create this program (Sticky Navigation Bar On Scroll). First, you need to create
+                    three Files one HTML File, CSS File and another one is js
+                    File. After creating these files just paste the following
+                    codes in your file.
+                  </p>
+                </div>
+
+                <div class="main-container-content-para">
+                  <p>
+                    First, create an HTML file with the name of index.html and
+                    paste the given codes in your HTML file. Remember, you’ve to
+                    create a file with .html extension.
+                  </p>
+                </div>
+                <div class="main-container-content-code">
+    <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>html</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-comment">&lt;!-- Coding By wynkCode | www.wynkcode.com --&gt;</span>
+
+        <span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"</span>
+            <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="</span>
+            <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span> <span class="hljs-attr">referrerpolicy</span>=<span class="hljs-string">"no-referrer"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"header"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stickynav"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'bx bx-menu'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>wynk<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo-half-name"</span>&gt;</span>Code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-links"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sidebar-logo"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo-name"</span>&gt;</span>wynk<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo-half-name"</span>&gt;</span>Code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'bx bx-x'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"links"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Reference<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'bx bxs-chevron-down htmlcss-arrow arrow'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"htmlCss-sub-menu sub-menu"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>SCSS<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Shopify<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>PHP<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Database<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>jquery<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"more"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>More<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'bx bxs-chevron-right arrow more-arrow'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"more-sub-menu sub-menu"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Neumorphism<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Pre-loader<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Glassmorphism<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Web Design<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'bx bxs-chevron-down js-arrow arrow '</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"htmlCss-sub-menu sub-menu"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Website Template<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>CSS Templates<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>JavaScript Project<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Glassmorphism<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Neumorphism<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Color Pallets<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Contact Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"search-box"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'bx bx-search'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-box"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Search..."</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- Java Script Link --&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/navscript.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+        </code></div></div></pre>
+                </div>
+                <div class="main-container-content-para">
+                  <p>
+                    Second, create a CSS file with the name of style.css and
+                    paste the given codes in your css file. Remember, you’ve to
+                    create a file with .css extension.
+                  </p>
+                </div>
+                <div class="main-container-content-code">
+<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-comment">&lt;!-- Coding By wynkCode | www.wynkcode.com --&gt;</span>
+  * {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">box-sizing</span>: border-box;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Roboto'</span>, sans-serif;
+    }
+
+    <span class="hljs-selector-tag">nav</span> {
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">70px</span>;
+    <span class="hljs-attribute">background</span>: white;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">2px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>);
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+    }
+
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1250px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">justify-content</span>: space-between;
+    <span class="hljs-attribute">margin</span>: auto;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">50px</span>;
+    }
+
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.logo</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-attribute">text-decoration</span>: none;
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+    }
+
+    <span class="hljs-selector-class">.logo-half-name</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#df1d86</span>;
+    }
+
+    <span class="hljs-selector-class">.logo</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Ubuntu'</span>, sans-serif;
+    }
+
+    <span class="hljs-selector-id">#heading</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">3rem</span> <span class="hljs-meta">!important</span>;
+    <span class="hljs-attribute">color</span>: black <span class="hljs-meta">!important</span>;
+    }
+
+    <span class="hljs-selector-id">#subheading</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span> <span class="hljs-meta">!important</span>;
+    <span class="hljs-attribute">color</span>: black <span class="hljs-meta">!important</span>;
+    }
+
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span> {
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">70px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    }
+
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    }
+
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> {
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">justify-content</span>: space-between;
+    <span class="hljs-attribute">list-style</span>: none;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">14px</span>;
+    }
+
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">text-decoration</span>: none;
+    <span class="hljs-attribute">white-space</span>: nowrap;
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+    }
+
+    <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.htmlcss-arrow</span>,
+    <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.js-arrow</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">180deg</span>);
+    }
+
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.arrow</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">22px</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">70px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">display</span>: inline-block;
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease;
+    }
+
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">70px</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">2rem</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">35px</span>;
+    <span class="hljs-attribute">background</span>: white;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">2px</span> <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> / <span class="hljs-number">20%</span>);
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">4px</span>;
+    <span class="hljs-attribute">display</span>: none;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">2</span>;
+    }
+
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.htmlCss-sub-menu</span>,
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.js-sub-menu</span> {
+    <span class="hljs-attribute">display</span>: block;
+    }
+
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-tag">li</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.1</span>);
+    }
+
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+    }
+
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-class">.more-arrow</span> {
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;
+    }
+
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.htmlCss-more-sub-menu</span>{
+    <span class="hljs-comment">/* line-height: 40px; */</span>
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-class">.more-sub-menu</span>{
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">4px</span>;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">display</span>: none;
+    }
+    <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-attribute">background-color</span>: white;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#00aced</span> <span class="hljs-meta">!important</span>;
+    }
+    <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-class">.more</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.more-sub-menu</span>{
+    <span class="hljs-attribute">display</span>: block;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.search-box</span>{
+    <span class="hljs-attribute">position</span>: relative;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">40px</span>;
+    }
+    <span class="hljs-selector-tag">ul</span><span class="hljs-selector-class">.htmlCss-sub-menu</span><span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::before</span> {
+        <span class="hljs-attribute">display</span>: none;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.search-box</span> <span class="hljs-selector-tag">i</span>{
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">22px</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+    <span class="hljs-attribute">cursor</span>: pointer;
+    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.search-box</span> <span class="hljs-selector-class">.input-box</span>{
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">right</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">100%</span> - <span class="hljs-number">40px</span>);
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">80px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#3E8DA8</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">6px</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">pointer-events</span>: none;
+    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.4s</span> ease;
+    }
+    <span class="hljs-selector-class">.navbar</span><span class="hljs-selector-class">.showInput</span> <span class="hljs-selector-class">.search-box</span> <span class="hljs-selector-class">.input-box</span>{
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">65px</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">pointer-events</span>: auto;
+    <span class="hljs-attribute">background</span>: black;
+    }
+    <span class="hljs-selector-class">.search-box</span> <span class="hljs-selector-class">.input-box</span><span class="hljs-selector-pseudo">::before</span>{
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">top</span>: -<span class="hljs-number">6px</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">45deg</span>);
+    }
+    <span class="hljs-selector-class">.search-box</span> <span class="hljs-selector-class">.input-box</span> <span class="hljs-selector-tag">input</span>{
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>);
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">35px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">280px</span>;
+    <span class="hljs-attribute">outline</span>: none;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">15px</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">border</span>: none;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span> <span class="hljs-selector-class">.sidebar-logo</span>{
+    <span class="hljs-attribute">display</span>: none;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.bx-menu</span>{
+    <span class="hljs-attribute">display</span>: none;
+    }
+    <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">5px</span>;
+    <span class="hljs-comment">/* bottom: 0; */</span>
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+    -webkit-<span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate3d</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate3d</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#22abc1</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(<span class="hljs-number">0px</span>, <span class="hljs-number">32px</span>);
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50px</span>;
+    }
+    <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">::before</span> {
+    -webkit-<span class="hljs-attribute">animation</span>: animateThis .<span class="hljs-number">3s</span> ease-in;
+    -webkit-<span class="hljs-attribute">animation-fill-mode</span>: forwards;
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">transition</span>: all .<span class="hljs-number">3s</span> ease-in-out;
+    }
+    <span class="hljs-keyword">@-webkit-keyframes</span> animateThis {
+    <span class="hljs-number">0%</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">0%</span>;
+    }
+    <span class="hljs-number">100%</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    }
+    }
+    <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>:<span class="hljs-number">920px</span>) {
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span>{
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">25px</span>;
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.logo</span> <span class="hljs-selector-tag">a</span>{
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">27px</span>;
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span>{
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">10px</span>;
+        <span class="hljs-attribute">white-space</span>: nowrap;
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span>{
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;
+    }
+    }
+    <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">800px</span>){
+    <span class="hljs-selector-tag">nav</span>{
+        <span class="hljs-comment">/* position: relative; */</span>
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.bx-menu</span>{
+        <span class="hljs-attribute">display</span>: block;
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span>{
+        <span class="hljs-attribute">position</span>: fixed;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">left</span>: -<span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">display</span>: block;
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">270px</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">background</span>: white;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+        <span class="hljs-comment">/* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);*/</span>
+        <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease;
+        <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1000</span>;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span> <span class="hljs-selector-class">.sidebar-logo</span>{
+        <span class="hljs-attribute">display</span>: flex;
+        <span class="hljs-attribute">align-items</span>: center;
+        <span class="hljs-attribute">justify-content</span>: space-between;
+    }
+    <span class="hljs-selector-class">.sidebar-logo</span> <span class="hljs-selector-class">.logo-name</span>{
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+    }
+    <span class="hljs-selector-class">.sidebar-logo</span>  <span class="hljs-selector-tag">i</span>,
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.bx-menu</span>{
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span>{
+        <span class="hljs-attribute">display</span>: block;
+        <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">20px</span>;
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.arrow</span>{
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span>{
+        <span class="hljs-attribute">display</span>: block;
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span>{
+        <span class="hljs-attribute">position</span>: relative;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">box-shadow</span>: none;
+        <span class="hljs-attribute">display</span>: none;
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-tag">li</span>{
+        <span class="hljs-attribute">border-bottom</span>: none;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-class">.more-sub-menu</span>{
+        <span class="hljs-attribute">display</span>: none;
+        <span class="hljs-attribute">position</span>: relative;
+        <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-class">.more-sub-menu</span> <span class="hljs-selector-tag">li</span>{
+        <span class="hljs-attribute">display</span>: flex;
+        <span class="hljs-attribute">align-items</span>: center;
+        <span class="hljs-attribute">justify-content</span>: space-between;
+    }
+    <span class="hljs-keyword">@-webkit-keyframes</span> animateThis {
+        <span class="hljs-number">0%</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">0%</span>;
+        }
+        <span class="hljs-number">100%</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">0%</span>;
+        }
+    }
+    <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.htmlcss-arrow</span>,
+    <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.js-arrow</span>{
+        <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">0deg</span>);
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-class">.more-sub-menu</span>{
+        <span class="hljs-attribute">display</span>: none;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-class">.more</span> <span class="hljs-selector-tag">span</span>{
+        <span class="hljs-comment">/* background: red; */</span>
+        <span class="hljs-attribute">display</span>: flex;
+        <span class="hljs-attribute">align-items</span>: center;
+        <span class="hljs-comment">/* justify-content: space-between; */</span>
+    }
+    <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.sub-menu</span> <span class="hljs-selector-class">.more</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.more-sub-menu</span>{
+        <span class="hljs-attribute">display</span>: none;
+    }
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.htmlCss-sub-menu</span>,
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.js-sub-menu</span>{
+        <span class="hljs-attribute">display</span>: none;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span><span class="hljs-selector-class">.show1</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-class">.htmlCss-sub-menu</span>,
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span><span class="hljs-selector-class">.show3</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-class">.js-sub-menu</span>,
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span><span class="hljs-selector-class">.show2</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-class">.more</span> <span class="hljs-selector-class">.more-sub-menu</span>{
+        <span class="hljs-attribute">display</span>: block;
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span><span class="hljs-selector-class">.show1</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-class">.htmlcss-arrow</span>,
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span><span class="hljs-selector-class">.show3</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-class">.js-arrow</span>{
+        <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">180deg</span>);
+    }
+    <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span><span class="hljs-selector-class">.show2</span> <span class="hljs-selector-class">.links</span> <span class="hljs-selector-class">.more-arrow</span>{
+        <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">90deg</span>);
+    }
+    }
+    <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>:<span class="hljs-number">370px</span>){
+    <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.navbar</span> <span class="hljs-selector-class">.nav-links</span>{
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+    }
+    }
+    <span class="hljs-selector-class">.sticky</span> {
+    <span class="hljs-attribute">position</span>: fixed;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">bottom</span>: auto;
+    <span class="hljs-attribute">background-color</span>: white;
+    <span class="hljs-comment">/* background-color: var(--deep-yellow);*/</span>
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>);
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">6px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.35</span>);
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">min-height</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+    -webkit-<span class="hljs-attribute">animation</span>: animFixedMain .<span class="hljs-number">5s</span> forwards;
+    -moz-<span class="hljs-attribute">animation</span>: animFixedMain .<span class="hljs-number">5s</span> forwards;
+    -o-<span class="hljs-attribute">animation</span>: animFixedMain .<span class="hljs-number">5s</span> forwards;
+    <span class="hljs-attribute">animation</span>: animFixedMain .<span class="hljs-number">5s</span> forwards;
+    }
+    </code></div></div></pre>
+</div>
+                <div class="main-container-content-para">
+                  <p>
+                    Second, create a js file with the name of script.js and
+                    paste the given codes in your js file. Remember, you’ve to
+                    create a file with .js extension.
+                  </p>
+                </div>
+                <div class="main-container-content-code">
+                    <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>javascript</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-comment">// search-box open close js code</span>
+                        <span class="hljs-keyword">let</span> navbar = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".navbar"</span>);
+                        <span class="hljs-keyword">let</span> searchBox = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".search-box .bx-search"</span>);
+                        <span class="hljs-comment">// let searchBoxCancel = document.querySelector(".search-box .bx-x");</span>
+
+                        searchBox.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">"click"</span>, <span class="hljs-function">() =&gt;</span> {
+                          navbar.<span class="hljs-property">classList</span>.<span class="hljs-title function_">toggle</span>(<span class="hljs-string">"showInput"</span>);
+                          <span class="hljs-keyword">if</span> (navbar.<span class="hljs-property">classList</span>.<span class="hljs-title function_">contains</span>(<span class="hljs-string">"showInput"</span>)) {
+                            searchBox.<span class="hljs-property">classList</span>.<span class="hljs-title function_">replace</span>(<span class="hljs-string">"bx-search"</span>, <span class="hljs-string">"bx-x"</span>);
+                          } <span class="hljs-keyword">else</span> {
+                            searchBox.<span class="hljs-property">classList</span>.<span class="hljs-title function_">replace</span>(<span class="hljs-string">"bx-x"</span>, <span class="hljs-string">"bx-search"</span>);
+                          }
+                        });
+
+                        <span class="hljs-comment">// sidebar open close js code</span>
+                        <span class="hljs-keyword">let</span> navLinks = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".nav-links"</span>);
+                        <span class="hljs-keyword">let</span> menuOpenBtn = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".navbar .bx-menu"</span>);
+                        <span class="hljs-keyword">let</span> menuCloseBtn = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".nav-links .bx-x"</span>);
+
+                        menuOpenBtn.<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+                          navLinks.<span class="hljs-property">style</span>.<span class="hljs-property">left</span> = <span class="hljs-string">"0"</span>;
+                        }
+
+                        menuCloseBtn.<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+                          navLinks.<span class="hljs-property">style</span>.<span class="hljs-property">left</span> = <span class="hljs-string">"-100%"</span>;
+                        }
+
+                        <span class="hljs-comment">// sidebar submenu open close js code</span>
+                        <span class="hljs-keyword">let</span> htmlcssArrow = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".htmlcss-arrow"</span>);
+                        htmlcssArrow.<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+                          navLinks.<span class="hljs-property">classList</span>.<span class="hljs-title function_">toggle</span>(<span class="hljs-string">"show1"</span>);
+                        }
+
+                        <span class="hljs-keyword">let</span> moreArrow = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".more-arrow"</span>);
+                        moreArrow.<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+                          navLinks.<span class="hljs-property">classList</span>.<span class="hljs-title function_">toggle</span>(<span class="hljs-string">"show2"</span>);
+                        }
+
+                        <span class="hljs-keyword">let</span> jsArrow = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".js-arrow"</span>);
+                        jsArrow.<span class="hljs-property">onclick</span> = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+                          navLinks.<span class="hljs-property">classList</span>.<span class="hljs-title function_">toggle</span>(<span class="hljs-string">"show3"</span>);
+                        };
+
+                        <span class="hljs-comment">/* Sticky */</span>
+                        (<span class="hljs-keyword">function</span>(<span class="hljs-params">$</span>) {
+                          <span class="hljs-string">"use strict"</span>;
+                          <span class="hljs-keyword">var</span> header = $(<span class="hljs-string">"#header"</span>);
+
+                          $(<span class="hljs-variable language_">window</span>).<span class="hljs-title function_">scroll</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+                            <span class="hljs-keyword">if</span> ($(<span class="hljs-variable language_">this</span>).<span class="hljs-title function_">scrollTop</span>() &gt; <span class="hljs-number">50</span>) {
+                              header.<span class="hljs-title function_">addClass</span>(<span class="hljs-string">"sticky"</span>);
+                              $(<span class="hljs-string">".navbar"</span>).<span class="hljs-title function_">addClass</span>(<span class="hljs-string">"fixed"</span>);
+                            } <span class="hljs-keyword">else</span> {
+                              header.<span class="hljs-title function_">removeClass</span>(<span class="hljs-string">"sticky"</span>);
+                              $(<span class="hljs-string">".navbar"</span>).<span class="hljs-title function_">removeClass</span>(<span class="hljs-string">"fixed"</span>);
+                            }
+                          });
+                        })(jQuery);
+                        </code></div></div></pre>
+                </div>
+
+                <div class="main-container-content-para">
+                  <p>
+                    That’s all, now you’ve successfully created a Sticky Navigation Bar On Scroll. If your code doesn’t work or you’ve faced
+                    any error/problem then please message on Instagram or
+                    contact us from the contact page.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="most-popular-side-bar">
+              <div class="aside-bar-section side-bar-1">
+                <div class="recent-secrtion">
+                  <p>Recent Post</p>
+                </div>
+                <div class="aside-bar">
+                  <div class="aside-bar-box-1 reveal">
+                    <div class="aside-bar-content">
+                      <div class="aside-bar-content-img">
+                        <img
+                          src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg"
+                        />
+                      </div>
+                      <div class="aside-bar-content-title">
+                        <h4>Website with Login & Registration For</h4>
+                        <p><b>wynkCode</b>May 9, 2023</p>
+                        <div class="social-media-icon">
+                          <ul>
+                            <li>
+                              <a href="">
+                                <i class="fa-brands fa-instagram"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i class="fa-brands fa-youtube"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i class="fa-brands fa-linkedin"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i class="fa-brands fa-twitter"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aside-bar-box-1 reveal">
+                    <div class="aside-bar-content">
+                      <div class="aside-bar-content-img">
+                        <img
+                          src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg"
+                        />
+                      </div>
+                      <div class="aside-bar-content-title">
+                        <h4>Website with Login & Registration For</h4>
+                        <p><b>wynkCode</b>May 9, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aside-bar-box-1 reveal">
+                    <div class="aside-bar-content">
+                      <div class="aside-bar-content-img">
+                        <img
+                          src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg"
+                        />
+                      </div>
+                      <div class="aside-bar-content-title">
+                        <h4>Website with Login & Registration For</h4>
+                        <p><b>wynkCode</b>May 9, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aside-bar-box-1 reveal">
+                    <div class="aside-bar-content">
+                      <div class="aside-bar-content-img">
+                        <img
+                          src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg"
+                        />
+                      </div>
+                      <div class="aside-bar-content-title">
+                        <h4>Website with Login & Registration For</h4>
+                        <p><b>wynkCode</b>May 9, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aside-bar-box-1 reveal">
+                    <div class="aside-bar-content">
+                      <div class="aside-bar-content-img">
+                        <img
+                          src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg"
+                        />
+                      </div>
+                      <div class="aside-bar-content-title">
+                        <h4>Website with Login & Registration For</h4>
+                        <p><b>wynkCode</b>May 9, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-bar-section">
+                <div class="recent-secrtion">
+                  <p>Follow Us</p>
+                </div>
+                <div class="aside-bar-social-account">
+                  <div class="aside-bar-icon reveal">
+                    <i class="fa-brands fa-instagram"></i>
+                    <h3>1,750</h3>
+                    <p>Followers</p>
+                  </div>
+                  <div class="aside-bar-icon reveal_second">
+                    <i class="fa-brands fa-youtube"></i>
+                    <h3>212</h3>
+                    <p>Subscriber</p>
+                  </div>
+                  <div class="aside-bar-icon reveal_third">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h3>600</h3>
+                    <p>Followers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-bar-section">
+                <div class="recent-secrtion">
+                  <p>Categories</p>
+                </div>
+                <div class="aside-bar-section-tags">
+                  <ul>
+                    <li><a href="">HTML5</a></li>
+                    <li><a href="">CSS3</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">php</a></li>
+                    <li><a href="">JavaScript Projects</a></li>
+                    <li><a href="">Navigation Bar</a></li>
+                    <li><a href="">Preloader or Loader</a></li>
+                    <li><a href="">Preloader or Loader</a></li>
+                    <li><a href="">JavaScript Projects</a></li>
+                    <li><a href="">CSS3</a></li>
+                    <li><a href="">php</a></li>
+                    <li><a href="">Preloader or Loader</a></li>
+                    <li><a href="">JavaScript Projects</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="home-bog-section">
+        <div class="home-blog-box">
+          <div class="recent-secrtion">
+            <p>Related Post</p>
+          </div>
+          <div class="home-blog-post">
+            <div class="home-blog-post-1 reveal">
+              <div class="aside-bar-content-img">
+                <img
+                  src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg"
+                />
+              </div>
+              <div class="aside-bar-content-title" id="subheading">
+                <h4>Website with Login & Registration For</h4>
+                <p><b>wynkCode</b>May 9, 2023</p>
+              </div>
+            </div>
+            <div class="home-blog-post-1 reveal_second">
+              <div class="aside-bar-content-img">
+                <img
+                  src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg"
+                />
+              </div>
+              <div class="aside-bar-content-title" id="subheading">
+                <h4>Website with Login & Registration For</h4>
+                <p><b>wynkCode</b>May 9, 2023</p>
+              </div>
+            </div>
+            <div class="home-blog-post-1 reveal_third">
+              <div class="aside-bar-content-img">
+                <img
+                  src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg"
+                />
+              </div>
+              <div class="aside-bar-content-title" id="subheading">
+                <h4>Website with Login & Registration For</h4>
+                <p><b>wynkCode</b>May 9, 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container-section">
+        <div class="gradient-circle">
+          <span class="reveal"></span>
+          <span class="reveal"></span>
+        </div>
+        <div class="footer-container-box">
+          <div class="footer-container-box-1">
+            <div class="footer-container-logo">
+              <h2>
+                <a href="">wynk<span>Code</span></a>
+              </h2>
+            </div>
+            <div class="footer-container-logo-details">
+              <p>wynkCode is a blog dedicated to providing valuable and informative content about web development
+                technologies such as HTML, CSS, JavaScript, and PHP... Read more</p>
+            </div>
+          </div>
+          <div class="footer-container-box-1">
+            <div class="footer-container-box-heading">
+              <h3>Resources</h3>
+            </div>
+            <ul>
+              <li><a href="#">Sass development</a></li>
+              <li><a href="#">Web development</a></li>
+              <li><a href="#">App development</a></li>
+              <li><a href="#">Sass development</a></li>
+              <li><a href="#">Web development</a></li>
+            </ul>
+          </div>
+          <div class="footer-container-box-1">
+            <div class="footer-container-box-heading">
+              <h3>Company</h3>
+            </div>
+            <ul>
+              <li><a href="#">Sass development</a></li>
+              <li><a href="#">Web development</a></li>
+              <li><a href="#">App development</a></li>
+              <li><a href="#">Sass development</a></li>
+              <li><a href="#">Web development</a></li>
+            </ul>
+          </div>
+          <div class="footer-container-box-1">
+            <div class="footer-container-box-heading">
+              <h3>Resources</h3>
+            </div>
+            <ul>
+              <li><a href="#">Sass development</a></li>
+              <li><a href="#">Web development</a></li>
+              <li><a href="#">App development</a></li>
+              <li><a href="#">Sass development</a></li>
+              <li><a href="#">Web development</a></li>
+            </ul>
+          </div>
+          <div class="footer-container-box-social">
+            <div class="footer-container-box-heading">
+              <h3>Resources</h3>
+            </div>
+            <ul>
+              <li>
+                <a class="footer-facebook" href="#"><span></span></a>
+              </li>
+              <li>
+                <a class="footer-instagram" href="#"><span></span></a>
+              </li>
+              <li>
+                <a class="footer-youtube" href="#"><span></span></a>
+              </li>
+              <li>
+                <a class="footer-twitter" href="#"><span></span></a>
+              </li>
+              <li>
+                <a class="footer-linkedin" href="#"><span></span></a>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

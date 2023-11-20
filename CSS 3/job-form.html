@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header id="header">
+    <nav class="stickynav">
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo"><a href="#">wynk<span class="logo-half-name">Code</span></a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">wynk<span class="logo-half-name">Code</span></span>
+            <i class='bx bx-x'></i>
+          </div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#">Reference</a>
+              <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">SCSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Shopify</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">jquery</a></li>
+                <!--- <li class="more">
+                                        <span><a href="#">More</a>
+                                            <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                        </span>
+                                        <ul class="more-sub-menu sub-menu">
+                                            <li><a href="#">Neumorphism</a></li>
+                                            <li><a href="#">Pre-loader</a></li>
+                                            <li><a href="#">Glassmorphism</a></li>
+                                        </ul>
+                                    </li>-->
+              </ul>
+            </li>
+            <li>
+              <a href="#">Web Design</a>
+              <i class='bx bxs-chevron-down js-arrow arrow '></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">Website Template</a></li>
+                <li><a href="#">CSS Templates</a></li>
+                <li><a href="#">JavaScript Project</a></li>
+                <li><a href="#">Glassmorphism</a></li>
+                <li><a href="#">Neumorphism</a></li>
+                <li><a href="#">Color Pallets</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search...">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../js/navscript.js"></script>
+  <script src="../js/sticky.js"></script>
+
+
+  <section>
+    <div class="container">
+      <div class="main-container-content">
+        <div class="flex-box">
+          <div class="main-container-1-content">
+            <div class="main-container-nav-menu">
+              <ul>
+                <li><a href="">HTML</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">CSS</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">JavaScript</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">Python</a></li>
+              </ul>
+            </div>
+            <div class="main-container-main-heading">
+              <h1>Job Application Form: Create an Interactive Form Using HTML and CSS</h1>
+            </div>
+            <div class="main-container-user">
+              <div class="main-container-by small-text">
+                <a>By</a>
+              </div>
+              <div class="main-container-user small-text">
+                <a>wynkCode</a>
+                <span> - </span>
+              </div>
+              <div class="main-container-date small-text">
+                <a>May 9, 2023</a>
+              </div>
+            </div>
+
+            <div class="footer-container-box-social top-social">
+              <ul>
+                <li><a class="footer-facebook" href="#"><span></span></a></li>
+                <li><a class="footer-instagram" href="#"><span></span></a></li>
+                <li><a class="footer-youtube" href="#"><span></span></a></li>
+                <li><a class="footer-twitter" href="#"><span></span></a></li>
+                <li><a class="footer-linkedin" href="#"><span></span></a></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="main-container-img">
+              <img src="../img/Job Form.png" alt="Job Form Image">
+            </div>
+            <div class="main-container-content-details">
+              <div class="main-container-content-para">
+                <p>Welcome to this tutorial where we will learn how to create a captivating job form using HTML and CSS. A job form is an essential element for websites or applications that facilitate the hiring process. By following this step-by-step guide, you will be able to design a professional-looking job form that collects necessary information from applicants.
+              </div>
+              
+              <div class="main-container-content-page-link">
+                <h3>Step 1: Set up the HTML structure</h3>
+                <ul>
+                  <li>Inside the <span><</span>body<span>></span> section, create a <span><</span>form<span>></span> element to contain the job form.
+                </li>
+                  <li>Use appropriate <span><</span>label<span>></span> and <span><</span>input<span>></span> elements to create form fields for various information such as name, email, phone number, etc.</li>
+                </ul>
+              </div>
+              <div class="main-container-content-page-link">
+                <h3>Step 2: Design the form layout</h3>
+                <ul>
+                  <li>Start by creating a new HTML file and open it in a text editor.</li>
+                  <li>Add the basic HTML structure with the <span><</span>!DOCTYPE html<span>></span> declaration, <span><</span>html<span>></span> tags, and <span><</span>head<span>></span> and <span><</span>body<span>></span> sections.</li>
+                  <li>Add <span><</span>textarea<span>></span> elements for additional details or a cover letter.</li>
+                  <li>Include a file input field (<span><</span>input type="file">) for resume uploads.</li>
+                </ul>
+              </div>
+              <div class="main-container-content-code">
+                <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>html</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+                    
+                    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>wynkCode - Job form<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./style.css"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&amp;family=Montserrat&amp;display=swap"</span>
+                        <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+                    
+                    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"survey-container"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"title"</span>&gt;</span>Job form<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"description"</span>&gt;</span>Fill in to apply<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    
+                        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"survey-form"</span>&gt;</span>
+                    
+                          <span class="hljs-comment">&lt;!-- name --&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name"</span>&gt;</span>Name:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter your name"</span> <span class="hljs-attr">required</span>&gt;</span>
+                    
+                          <span class="hljs-comment">&lt;!-- email --&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter your email"</span> <span class="hljs-attr">required</span>&gt;</span>
+                    
+                          <span class="hljs-comment">&lt;!-- education dropdown --&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>Level of education:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input"</span> <span class="hljs-attr">required</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">selected</span>&gt;</span>Select an option<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"primary"</span>&gt;</span>Primary education<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"secondary"</span>&gt;</span>Secondary education<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"higher"</span>&gt;</span>Higher education<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"na"</span>&gt;</span>No answer<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                    
+                          <span class="hljs-comment">&lt;!-- years of experience --&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"number-label"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"number"</span>&gt;</span>Years of experience (optional):<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter number of years of experience"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"0"</span>
+                            <span class="hljs-attr">max</span>=<span class="hljs-string">"50"</span>&gt;</span>
+                    
+                          <span class="hljs-comment">&lt;!-- programs checkbox --&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-label"</span>&gt;</span>Known programs:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"box-windows"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"box-windows"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"windows"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>Windows<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"box-word"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"box-word"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"word"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>Word<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"box-excel"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"box-excel"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"excel"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>Excel<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"box-powerpoint"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"box-powerpoint"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"powerpoint"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>Power Point<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"box-outlook"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"box-outlook"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"outlook"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>Outlook<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-comment">&lt;!-- salary radio --&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-label"</span>&gt;</span>Expected salary:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"below-3k"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"below-3k"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"below-3k"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>Below $3K<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"3k-4k"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"3k-4k"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"3k-4k"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>$3K - $4K<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"4k-5k"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"4k-5k"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"4k-5k"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>$4K - $5K<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"above-5k"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"above-5k"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"above-5k"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>Above $5K<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-input small"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"dont-know"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dont-know"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"dont know"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-label"</span>&gt;</span>Don't know<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    
+                          <span class="hljs-comment">&lt;!-- comments textarea --&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row-label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"comments"</span>&gt;</span>Additional informations:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"comments"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter other informations here..."</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+                    
+                          <span class="hljs-comment">&lt;!-- submit button --&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                    
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+                    
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+                    
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+                    </code></div></div></pre>
+              </div>
+              <div class="main-container-content-para">
+                <p>Just like before, we have included a link to an external CSS file named styles.css, which we will create in the next step. The card is represented by a <span><</span>div<span>></span> element with the class "card" and contains the text "Magic Card".
+                </p>
+              </div> 
+             <div class="main-container-content-para">
+                <h2>Step 2: Creating the CSS Styles</h2>
+                <p>Please note that this code assumes you have a separate CSS file linked with the href attribute in the <span><</span>link<span>></span> tag. Make sure to adjust the path (./style.css) accordingly to match the location of your CSS file.
+                </p>
+              </div>
+              <div class="main-container-content-code">
+                <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-pseudo">:root</span> {
+                    <span class="hljs-attr">--box-height</span>: <span class="hljs-number">40px</span>;
+                    <span class="hljs-attr">--border-radius</span>: <span class="hljs-number">5px</span>;
+                    <span class="hljs-attr">--space-between</span>: <span class="hljs-number">20px</span>;
+                    <span class="hljs-attr">--font-size</span>: <span class="hljs-number">16px</span>;
+                  
+                    <span class="hljs-attr">--color-0</span>: <span class="hljs-number">#ffffff</span>;
+                    <span class="hljs-attr">--color-1</span>: <span class="hljs-number">#dcdcdd</span>;
+                    <span class="hljs-attr">--color-2</span>: <span class="hljs-number">#c5c3c6</span>;
+                    <span class="hljs-attr">--color-3</span>: <span class="hljs-number">#212529</span>;
+                    <span class="hljs-attr">--color-4</span>: <span class="hljs-number">#1e3a8a</span>;
+                    <span class="hljs-attr">--color-5</span>: <span class="hljs-number">#ce4257</span>;
+                  }
+                  
+                  * {
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Montserrat"</span>, sans-serif;
+                    <span class="hljs-attribute">box-sizing</span>: border-box;
+                  }
+                  
+                  <span class="hljs-selector-tag">body</span> {
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">10px</span>;
+                    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1d4ed8</span>;
+                    <span class="hljs-attribute">background-size</span>: cover;
+                    <span class="hljs-attribute">background-repeat</span>: no-repeat;
+                    <span class="hljs-attribute">background-attachment</span>: fixed;
+                    <span class="hljs-attribute">background-position</span>: center center;
+                  }
+                  
+                  <span class="hljs-selector-id">#survey-container</span> {
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> auto;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span> <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">840px</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">3</span> * <span class="hljs-built_in">var</span>(--border-radius));
+                  }
+                  
+                  <span class="hljs-selector-id">#title</span> {
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">30px</span> <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">text-align</span>: center;
+                    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Kumbh Sans"</span>, sans-serif;
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
+                    <span class="hljs-attribute">text-transform</span>: capitalize;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-<span class="hljs-number">0</span>);
+                  }
+                  
+                  <span class="hljs-selector-id">#description</span> {
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
+                    <span class="hljs-attribute">text-align</span>: center;
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">22px</span>;
+                    <span class="hljs-attribute">font-weight</span>: bold;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-<span class="hljs-number">0</span>);
+                  }
+                  
+                  <span class="hljs-selector-id">#survey-form</span> {
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span>;
+                    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--color-<span class="hljs-number">1</span>);
+                    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">98%</span>;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">var</span>(--border-radius));
+                  }
+                  
+                  <span class="hljs-selector-id">#survey-form</span> * {
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-built_in">var</span>(--font-size);
+                  }
+                  
+                  <span class="hljs-selector-class">.row-label</span>,
+                  <span class="hljs-selector-class">.row-input</span> {
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">10px</span>;
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">height</span>: <span class="hljs-built_in">var</span>(--box-height);
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">display</span>: block;
+                  }
+                  
+                  <span class="hljs-selector-class">.row-label</span> {
+                    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-<span class="hljs-number">3</span>);
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.row-label</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-pseudo">:first</span>-child) {
+                    <span class="hljs-attribute">margin-top</span>: <span class="hljs-built_in">var</span>(--space-between);
+                  }
+                  
+                  <span class="hljs-selector-class">.row-input</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-class">.small</span>) {
+                    <span class="hljs-attribute">background</span>: white;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-built_in">var</span>(--border-radius);
+                  }
+                  
+                  <span class="hljs-selector-class">.inline-label</span> {
+                    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">10px</span>;
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-<span class="hljs-number">3</span>);
+                  }
+                  
+                  <span class="hljs-selector-class">.small</span> {
+                    <span class="hljs-attribute">height</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-built_in">var</span>(--box-height) * <span class="hljs-number">0.75</span>);
+                  }
+                  
+                  <span class="hljs-selector-id">#comments</span> {
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">height</span>: <span class="hljs-number">120px</span>;
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">background</span>: white;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-built_in">var</span>(--border-radius);
+                    <span class="hljs-attribute">resize</span>: none;
+                  }
+                  
+                  <span class="hljs-selector-id">#submit</span> {
+                    <span class="hljs-attribute">margin-top</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">2</span> * <span class="hljs-built_in">var</span>(--space-between));
+                    <span class="hljs-attribute">height</span>: <span class="hljs-built_in">var</span>(--box-height);
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--color-<span class="hljs-number">4</span>);
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-built_in">var</span>(--border-radius);
+                    <span class="hljs-attribute">color</span>: white;
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+                    <span class="hljs-attribute">cursor</span>: pointer;
+                    <span class="hljs-attribute">text-transform</span>: capitalize;
+                  }
+                  
+                  <span class="hljs-selector-id">#submit</span><span class="hljs-selector-pseudo">:hover</span> {
+                    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-built_in">var</span>(--color-<span class="hljs-number">3</span>);
+                  }
+                  </code></div></div></pre>
+              </div>
+
+              <div class="main-container-content-para">
+                <p>This CSS code provides styling for the job form, including colors, spacing, font sizes, and various element styles.</p>
+              </div>
+              <div class="main-container-content-para">
+                <p>By the end of this tutorial, you will have a complete understanding of how to create a job form that can be easily integrated into your website or application. So let's dive in and create an impressive job form that will streamline your hiring process and leave a lasting impression on your applicants.</p>
+              </div>
+            </div>
+          </div>
+          <div class="most-popular-side-bar">
+            <div class="aside-bar-section side-bar-1">
+              <div class="recent-secrtion">
+                <p>Recent Post</p>
+              </div>
+              <div class="aside-bar">
+                <div class="aside-bar-box-1 reveal">
+                  <div class="aside-bar-content ">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                      <div class="social-media-icon">
+                        <ul>
+                          <li><a href=""> <i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-youtube"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-linkedin"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1 reveal">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1 reveal">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1 reveal">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1 reveal">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="aside-bar-section">
+              <div class="recent-secrtion">
+                <p>Follow Us</p>
+              </div>
+              <div class="aside-bar-social-account">
+                <div class="aside-bar-icon reveal">
+                  <i class="fa-brands fa-instagram"></i>
+                  <h3>1,750</h3>
+                  <p>Followers</p>
+                </div>
+                <div class="aside-bar-icon reveal_second">
+                  <i class="fa-brands fa-youtube"></i>
+                  <h3>212</h3>
+                  <p>Subscriber</p>
+                </div>
+                <div class="aside-bar-icon reveal_third">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <h3>600</h3>
+                  <p>Followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="aside-bar-section">
+              <div class="recent-secrtion">
+                <p>Categories</p>
+              </div>
+              <div class="aside-bar-section-tags">
+                <ul>
+                  <li><a href="">HTML5</a></li>
+                  <li><a href="">CSS3</a></li>
+                  <li><a href="">JavaScript</a></li>
+                  <li><a href="">php</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                  <li><a href="">Navigation Bar</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                  <li><a href="">CSS3</a></li>
+                  <li><a href="">php</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="home-bog-section">
+      <div class="home-blog-box">
+        <div class="recent-secrtion">
+          <p>Related Post</p>
+        </div>
+        <div class="home-blog-post">
+          <div class="home-blog-post-1 reveal">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+          <div class="home-blog-post-1 reveal_second">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+          <div class="home-blog-post-1 reveal_third">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container-section">
+      <div class="gradient-circle">
+        <span class="reveal"></span>
+        <span class="reveal"></span>
+      </div>
+      <div class="footer-container-box">
+        <div class="footer-container-box-1">
+
+          <div class="footer-container-logo">
+            <h2>
+              <a href="">wynk<span>Code</span></a>
+            </h2>
+          </div>
+          <div class="footer-container-logo-details">
+            <p>wynkCode is a blog dedicated to providing valuable and informative content about web development
+              technologies such as HTML, CSS, JavaScript, and PHP... Read more</p>
+          </div>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Company</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-social">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a class="footer-facebook" href="#"><span></span></a></li>
+            <li><a class="footer-instagram" href="#"><span></span></a></li>
+            <li><a class="footer-youtube" href="#"><span></span></a></li>
+            <li><a class="footer-twitter" href="#"><span></span></a></li>
+            <li><a class="footer-linkedin" href="#"><span></span></a></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

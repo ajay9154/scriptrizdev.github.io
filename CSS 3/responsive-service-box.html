@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Services Box with Flip Animation using only HTML & CSS snippet</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header id="header">
+    <nav class="stickynav">
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo"><a href="#">wynk<span class="logo-half-name">Code</span></a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">wynk<span class="logo-half-name">Code</span></span>
+            <i class='bx bx-x'></i>
+          </div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#">Reference</a>
+              <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">SCSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Shopify</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">jquery</a></li>
+                <!--- <li class="more">
+                                        <span><a href="#">More</a>
+                                            <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                        </span>
+                                        <ul class="more-sub-menu sub-menu">
+                                            <li><a href="#">Neumorphism</a></li>
+                                            <li><a href="#">Pre-loader</a></li>
+                                            <li><a href="#">Glassmorphism</a></li>
+                                        </ul>
+                                    </li>-->
+              </ul>
+            </li>
+            <li>
+              <a href="#">Web Design</a>
+              <i class='bx bxs-chevron-down js-arrow arrow '></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">Website Template</a></li>
+                <li><a href="#">CSS Templates</a></li>
+                <li><a href="#">JavaScript Project</a></li>
+                <li><a href="#">Glassmorphism</a></li>
+                <li><a href="#">Neumorphism</a></li>
+                <li><a href="#">Color Pallets</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search...">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../js/navscript.js"></script>
+  <script src="../js/sticky.js"></script>
+
+
+  <section>
+    <div class="container">
+      <div class="main-container-content">
+        <div class="flex-box">
+          <div class="main-container-1-content">
+            <div class="main-container-nav-menu">
+              <ul>
+                <li><a href="">HTML</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">CSS</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">JavaScript</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">Python</a></li>
+              </ul>
+            </div>
+            <div class="main-container-main-heading">
+              <h1>Responsive Services Box with Flip Animation using only HTML & CSS snippet</h1>
+            </div>
+            <div class="main-container-user">
+              <div class="main-container-by small-text">
+                <a>By</a>
+              </div>
+              <div class="main-container-user small-text">
+                <a>wynkCode</a>
+                <span> - </span>
+              </div>
+              <div class="main-container-date small-text">
+                <a>May 9, 2023</a>
+              </div>
+            </div>
+            <div class="footer-container-box-social top-social">
+              <ul>
+                <li><a class="footer-facebook" href="#"><span></span></a></li>
+                <li><a class="footer-instagram" href="#"><span></span></a></li>
+                <li><a class="footer-youtube" href="#"><span></span></a></li>
+                <li><a class="footer-twitter" href="#"><span></span></a></li>
+                <li><a class="footer-linkedin" href="#"><span></span></a></li>
+              </ul>
+            </div>
+            <div class="main-container-img">
+              <img src="../img/Contact Page .png" alt="Social Icon BG">
+            </div>
+            <div class="main-container-content-details">
+              <div class="main-container-content-para">
+                <p>In this tutorial, you will learn how to create a set of responsive services boxes with an engaging flip animation using only HTML and CSS. The flip animation adds a dynamic touch to your website's service offerings, making them stand out and capture your visitors' attention.</p>
+              </div>
+              <div class="main-container-content-para">
+                <p>By following this step-by-step guide, you will discover how to structure the HTML elements to create individual service boxes. Then, we'll dive into styling the boxes using CSS, making them visually appealing with customized colors, icons, and fonts. The responsive design ensures that the service boxes adapt gracefully to different screen sizes, making your website look great on both desktop and mobile devices.</p>
+              </div>
+              <div class="main-container-content-page-link">
+                <h3>Create the HTML Structure</h3>
+                <ul>
+                    <li>Start by setting up the basic HTML structure with the <span><</span>!DOCTYPE html> declaration, <span><</span>html>, <span><</span>head>, and <span><</span>body<span>></span> elements.
+                    </li>
+                    <li>Inside the <span><</span>body>, create a <span><</span>section> with a class like "services-container" to contain the service boxes.
+                    </li>
+                    <li>Within the "service-box" div, create two nested divs with classes "service-front" and "service-back". The "service-front" will contain the front side of the box (service title and icon), and the "service-back" will contain the back side (service details).</li>
+                </ul>
+            </div>
+              <div class="main-container-content-para">
+                <h2>HTML Structure:</h2>
+                <p>We'll start by laying the foundation of our contact page using HTML. Learn how to structure the page efficiently, incorporating essential elements such as forms, labels, input fields, and buttons.</p>
+              </div>
+              <div class="main-container-content-code">
+                <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>html</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+                  
+                  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span> /&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Contact Page Design Using HTML and CSS<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"</span>
+                          <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="</span>
+                          <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span> <span class="hljs-attr">referrerpolicy</span>=<span class="hljs-string">"no-referrer"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+                  
+                  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"contact-container"</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cont-md-8"</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"contact-content"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"left-side"</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"address details"</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-map-marker-alt"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"topic"</span>&gt;</span>Address<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-one"</span>&gt;</span>6/16 Main Street,
+                                                  Osborne Park
+                                                  WA 6017<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phone details"</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-phone-alt"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"topic"</span>&gt;</span>Phone<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-one"</span>&gt;</span>+91 1222-405-666<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"email details"</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-envelope"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"topic"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-one"</span>&gt;</span>xyzhnjd.yjkle@gmail.comm<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"right-side"</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"topic-text"</span>&gt;</span>Send Us A <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Message<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>If you have any work for me or any types of queries related to my tutorial, you can send me
+                                              a message from here. It's my pleasure to help you.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">""</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-box"</span>&gt;</span>
+                                                  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"yourName"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Name"</span> <span class="hljs-attr">required</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-box"</span>&gt;</span>
+                                                  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"phoneNumber"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Phone No."</span> <span class="hljs-attr">required</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-box"</span>&gt;</span>
+                                                  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"yourEmail"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Email"</span> <span class="hljs-attr">required</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-box message-box"</span>&gt;</span>
+                                                  <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"message"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"subject"</span>
+                                                      <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-btn"</span>&gt;</span>
+                                                  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-paper-plane"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                                              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                          <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+                  
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+                  </code></div></div></pre>
+              </div>
+              
+              <div class="main-container-content-para">
+                <h2>Responsive Design: </h2>
+                <p> With mobile users in mind, learn how to make your contact page responsive. Adapt your design to various screen sizes and ensure a seamless experience across desktops, tablets, and smartphones.</p>
+              </div>
+              <div class="main-container-content-para">
+                <h2>CSS Styling:</h2>
+                <p>Dive into the world of CSS as we guide you through the process of making your contact page visually appealing. Explore styling techniques to create a harmonious design, customize fonts, colors, and spacing, and ensure your page is responsive across different devices.</p>
+              </div>
+              <div class="main-container-content-code">
+                <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-keyword">@import</span> url(<span class="hljs-string">'https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&amp;display=swap'</span>);
+
+                  <span class="hljs-selector-pseudo">:root</span> {
+                    <span class="hljs-attr">--black</span>: <span class="hljs-number">#1f1f1f</span>;
+                    <span class="hljs-attr">--white</span>: <span class="hljs-number">#fff</span>;
+                    <span class="hljs-attr">--yellow</span>: <span class="hljs-number">#54ebff</span>;
+                    <span class="hljs-attr">--light-yellow</span>: <span class="hljs-number">#fff9e9</span>;
+                    <span class="hljs-attr">--deep-yellow</span>: <span class="hljs-number">#ffc727</span>;
+                    <span class="hljs-attr">--bg-yellow</span>: <span class="hljs-number">#f1feff</span>;
+                    <span class="hljs-attr">--btn-yellow</span>: <span class="hljs-number">#fff4d4</span>;
+                    <span class="hljs-attr">--footer-yellow</span>: <span class="hljs-number">#fff9e9</span>;
+                    <span class="hljs-attr">--grey</span>: <span class="hljs-number">#737373</span>;
+                    <span class="hljs-attr">--box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.5rem</span> <span class="hljs-number">1.5rem</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.1</span>);
+                    <span class="hljs-attr">--transition</span>: all <span class="hljs-number">0.2s</span> linear;
+                    <span class="hljs-attr">--ambulance</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">167</span>, <span class="hljs-number">201</span>, <span class="hljs-number">167</span>);
+                  }
+                  
+                  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">450px</span>) {
+                    <span class="hljs-selector-id">#paddingzero</span> <span class="hljs-selector-class">.contact-info</span> {
+                      <span class="hljs-attribute">display</span>: block <span class="hljs-meta">!important</span>;
+                      <span class="hljs-attribute">text-align</span>: center;
+                      <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
+                    }
+                  }
+                  
+                  * {
+                    <span class="hljs-attribute">box-sizing</span>: border-box;
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Poppins'</span>, sans-serif;
+                  }
+                  
+                  <span class="hljs-selector-tag">body</span> {
+                    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#4B0082</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.form-box</span> {
+                    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--deep-yellow);
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">30px</span> <span class="hljs-number">20px</span> <span class="hljs-number">30px</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">15px</span>;
+                    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">540px</span>;
+                    <span class="hljs-attribute">margin</span>: auto;
+                    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">15px</span> <span class="hljs-number">#979797</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.form-box</span> center {
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.form-box</span> center <span class="hljs-selector-tag">h2</span> {
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">3rem</span>;
+                    <span class="hljs-attribute">color</span>: white;
+                    <span class="hljs-attribute">text-transform</span>: uppercase;
+                  }
+                  
+                  <span class="hljs-selector-class">.container1</span> {
+                    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f2f2f2</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">20px</span> <span class="hljs-number">15px</span> <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid lightgrey;
+                    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">600px</span>;
+                    <span class="hljs-attribute">margin</span>: auto;
+                  }
+                  
+                  <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=<span class="hljs-string">"text"</span>]</span> {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span>;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">outline</span>: none;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+                  }
+                  
+                  <span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">:focus</span> {
+                    <span class="hljs-attribute">outline</span>: <span class="hljs-number">2px</span> solid <span class="hljs-built_in">rgb</span>(<span class="hljs-number">214</span>, <span class="hljs-number">214</span>, <span class="hljs-number">214</span>);
+                    <span class="hljs-attribute">transition</span>: all .<span class="hljs-number">5s</span> ease-in-out;
+                  }
+                  
+                  <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=<span class="hljs-string">"datetime-local"</span>]</span> {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+                  }
+                  
+                  <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=<span class="hljs-string">"email"</span>]</span>,
+                  <span class="hljs-selector-tag">textarea</span>,
+                  select {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span>;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">outline</span>: none;
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+                    <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">0.3px</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-number">#343434</span> <span class="hljs-meta">!important</span>;
+                    <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">6px</span> <span class="hljs-number">#c5c3c3</span>;
+                  }
+                  
+                  <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=<span class="hljs-string">"number"</span>]</span> {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span>;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">outline</span>: none;
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+                    <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">0.3px</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-number">#343434</span> <span class="hljs-meta">!important</span>;
+                    <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">6px</span> <span class="hljs-number">#c5c3c3</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.input-box</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=<span class="hljs-string">"text"</span>]</span> {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span>;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">outline</span>: none;
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+                    <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">0.3px</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-number">#343434</span> <span class="hljs-meta">!important</span>;
+                    <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">6px</span> <span class="hljs-number">#c5c3c3</span>;
+                  }
+                  
+                  <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=<span class="hljs-string">"time"</span>]</span> {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span>;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">outline</span>: none;
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+                    <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">0.3px</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-number">#343434</span> <span class="hljs-meta">!important</span>;
+                    <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">6px</span> <span class="hljs-number">#c5c3c3</span>;
+                  }
+                  
+                  <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=<span class="hljs-string">"date"</span>]</span> {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">outline</span>: none;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-number">#707070</span>;
+                    <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">6px</span> <span class="hljs-number">#c5c3c3</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.form-btn</span> <span class="hljs-selector-tag">button</span> {
+                    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#02033f</span>;
+                    <span class="hljs-attribute">color</span>: white;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span>;
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">3px</span>;
+                    <span class="hljs-attribute">cursor</span>: pointer;
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">17px</span>;
+                    <span class="hljs-attribute">text-transform</span>: uppercase;
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+                    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Ubuntu'</span>;
+                    <span class="hljs-attribute">display</span>: flex;
+                    <span class="hljs-attribute">justify-content</span>: center;
+                    <span class="hljs-attribute">align-items</span>: center;
+                    <span class="hljs-attribute">gap</span>: <span class="hljs-number">5px</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.form-btn</span> <span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:active</span> {
+                    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(.<span class="hljs-number">9</span>);
+                    <span class="hljs-attribute">transition</span>: all .<span class="hljs-number">3s</span> ease-in-out;
+                  }
+                  
+                  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">400px</span>) {
+                    <span class="hljs-selector-class">.row</span> {
+                      <span class="hljs-attribute">flex-direction</span>: column;
+                    }
+                    <span class="hljs-selector-class">.col-25</span> {
+                      <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+                    }
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-container</span> {
+                    <span class="hljs-attribute">display</span>: flex;
+                    <span class="hljs-attribute">justify-content</span>: center;
+                    <span class="hljs-attribute">align-items</span>: center;
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">4rem</span>;
+                    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ffffff</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">2rem</span> <span class="hljs-number">0</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.cont-md-8</span> {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">85%</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">6px</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">30px</span> <span class="hljs-number">30px</span> <span class="hljs-number">30px</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-container</span> <span class="hljs-selector-class">.contact-content</span> {
+                    <span class="hljs-attribute">display</span>: flex;
+                    <span class="hljs-attribute">align-items</span>: center;
+                    <span class="hljs-attribute">justify-content</span>: space-between;
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-container</span> <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.left-side</span> {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">25%</span>;
+                    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">display</span>: flex;
+                    <span class="hljs-attribute">flex-direction</span>: column;
+                    <span class="hljs-attribute">align-items</span>: center;
+                    <span class="hljs-attribute">justify-content</span>: center;
+                    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">15px</span>;
+                    <span class="hljs-attribute">position</span>: relative;
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.left-side</span><span class="hljs-selector-pseudo">::before</span> {
+                    <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+                    <span class="hljs-attribute">position</span>: absolute;
+                    <span class="hljs-attribute">height</span>: <span class="hljs-number">70%</span>;
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">2px</span>;
+                    <span class="hljs-attribute">right</span>: -<span class="hljs-number">15px</span>;
+                    <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+                    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-<span class="hljs-number">50%</span>);
+                    <span class="hljs-attribute">background</span>: <span class="hljs-number">#afafb6</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.left-side</span> <span class="hljs-selector-class">.details</span> {
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">14px</span>;
+                    <span class="hljs-attribute">text-align</span>: center;
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.left-side</span> <span class="hljs-selector-class">.details</span> <span class="hljs-selector-tag">i</span> {
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bg-blue);
+                    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.left-side</span> <span class="hljs-selector-class">.details</span> <span class="hljs-selector-class">.topic</span> {
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.left-side</span> <span class="hljs-selector-class">.details</span> <span class="hljs-selector-class">.text-one</span>,
+                  <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.left-side</span> <span class="hljs-selector-class">.details</span> <span class="hljs-selector-class">.text-two</span> {
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-number">#636363</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-container</span> <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.right-side</span> {
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">75%</span>;
+                    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">75px</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.right-side</span> <span class="hljs-selector-class">.topic-text</span> {
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">23px</span>;
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+                    <span class="hljs-attribute">color</span>: <span class="hljs-number">#3e2093</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.right-side</span> <span class="hljs-selector-class">.input-box</span> {
+                    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">12px</span> <span class="hljs-number">0</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.input-box</span> <span class="hljs-selector-tag">input</span>,
+                  <span class="hljs-selector-class">.input-box</span> <span class="hljs-selector-tag">textarea</span> {
+                    <span class="hljs-attribute">box-shadow</span>: none <span class="hljs-meta">!important</span>;
+                    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid darkgrey <span class="hljs-meta">!important</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
+                    <span class="hljs-attribute">background-color</span>: white <span class="hljs-meta">!important</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.right-side</span> <span class="hljs-selector-class">.input-box</span> <span class="hljs-selector-tag">input</span>,
+                  <span class="hljs-selector-class">.right-side</span> <span class="hljs-selector-class">.input-box</span> <span class="hljs-selector-tag">textarea</span> {
+                    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">outline</span>: none;
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+                    <span class="hljs-attribute">background</span>: <span class="hljs-number">#F0F1F8</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">6px</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">15px</span>;
+                    <span class="hljs-attribute">resize</span>: none;
+                    <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">0</span> <span class="hljs-number">8px</span> <span class="hljs-number">8px</span> <span class="hljs-number">0px</span> <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> / <span class="hljs-number">5%</span>);
+                  }
+                  
+                  <span class="hljs-selector-class">.right-side</span> <span class="hljs-selector-class">.message-box</span> {
+                    <span class="hljs-attribute">min-height</span>: <span class="hljs-number">110px</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.right-side</span> <span class="hljs-selector-class">.input-box</span> <span class="hljs-selector-tag">textarea</span> {
+                    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">6px</span>;
+                    <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">0</span> <span class="hljs-number">8px</span> <span class="hljs-number">8px</span> <span class="hljs-number">0px</span> <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> / <span class="hljs-number">5%</span>);
+                  }
+                  
+                  <span class="hljs-selector-class">.right-side</span> <span class="hljs-selector-class">.submit-button</span> {
+                    <span class="hljs-attribute">display</span>: inline-block;
+                    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">12px</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.right-side</span> <span class="hljs-selector-class">.submit-button</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=<span class="hljs-string">"button"</span>]</span> {
+                    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+                    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+                    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+                    <span class="hljs-attribute">outline</span>: none;
+                    <span class="hljs-attribute">border</span>: none;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">16px</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">6px</span>;
+                    <span class="hljs-attribute">background</span>: <span class="hljs-number">#3e2093</span>;
+                    <span class="hljs-attribute">cursor</span>: pointer;
+                    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease;
+                  }
+                  
+                  <span class="hljs-selector-class">.submit-button</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=<span class="hljs-string">"button"</span>]</span><span class="hljs-selector-pseudo">:hover</span> {
+                    <span class="hljs-attribute">background</span>: <span class="hljs-number">#5029bc</span>;
+                  }
+                  
+                  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">950px</span>) {
+                    <span class="hljs-selector-class">.contact-container</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.right-side</span> {
+                      <span class="hljs-attribute">width</span>: <span class="hljs-number">75%</span>;
+                      <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">55px</span>;
+                    }
+                  }
+                  
+                  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">820px</span>) {
+                    <span class="hljs-selector-class">.contact-container</span> {
+                      <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-meta">!important</span>;
+                      <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+                    }
+                  
+                    <span class="hljs-selector-class">.right-side</span> <span class="hljs-selector-class">.submit-button</span> {
+                      <span class="hljs-attribute">display</span>: flex;
+                      <span class="hljs-attribute">justify-content</span>: center;
+                    }
+                  
+                    <span class="hljs-selector-class">.contact-container</span> <span class="hljs-selector-class">.contact-content</span> {
+                      <span class="hljs-attribute">flex-direction</span>: column-reverse;
+                    }
+                  
+                    <span class="hljs-selector-class">.contact-container</span> <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.left-side</span> {
+                      <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                      <span class="hljs-attribute">flex-direction</span>: row;
+                      <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">40px</span>;
+                      <span class="hljs-attribute">justify-content</span>: center;
+                      <span class="hljs-attribute">flex-wrap</span>: wrap;
+                    }
+                  
+                    <span class="hljs-selector-class">.contact-container</span> <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.left-side</span><span class="hljs-selector-pseudo">::before</span> {
+                      <span class="hljs-attribute">display</span>: none;
+                    }
+                  
+                    <span class="hljs-selector-class">.contact-container</span> <span class="hljs-selector-class">.contact-content</span> <span class="hljs-selector-class">.right-side</span> {
+                      <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                      <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
+                    }
+                  
+                    <span class="hljs-selector-class">.cont-md-8</span> {
+                      <span class="hljs-attribute">width</span>: <span class="hljs-number">85%</span>;
+                      <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">6px</span>;
+                      <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">30px</span> <span class="hljs-number">0px</span> <span class="hljs-meta">!important</span>;
+                    }
+                  }
+                  
+                  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">850px</span>) {
+                    <span class="hljs-selector-class">.contact-container</span> <span class="hljs-selector-class">.input-box</span> {
+                      <span class="hljs-attribute">display</span>: grid;
+                      <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">100%</span>;
+                    }
+                  
+                    <span class="hljs-selector-class">.message-icon</span> {
+                      <span class="hljs-attribute">display</span>: none <span class="hljs-meta">!important</span>;
+                    }
+                  }
+                  
+                  <span class="hljs-selector-class">.message-icon</span> {
+                    <span class="hljs-attribute">align-items</span>: center;
+                    <span class="hljs-attribute">display</span>: flex;
+                    <span class="hljs-attribute">justify-content</span>: center;
+                    <span class="hljs-attribute">background</span>: <span class="hljs-number">#7a55eb</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">8px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">8px</span>;
+                  }
+                  
+                  <span class="hljs-selector-tag">i</span><span class="hljs-selector-class">.fa</span><span class="hljs-selector-class">.fa-message</span> {
+                    <span class="hljs-attribute">color</span>: white;
+                  }
+                  
+                  <span class="hljs-selector-class">.col-md-4</span> {
+                    <span class="hljs-attribute">justify-content</span>: center;
+                    <span class="hljs-attribute">display</span>: grid;
+                    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">80%</span>;
+                    <span class="hljs-attribute">margin</span>: <span class="hljs-number">5rem</span> <span class="hljs-number">0</span>;
+                  }
+                  
+                  <span class="hljs-selector-class">.topic-text</span> <span class="hljs-selector-tag">span</span> {
+                    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#cd1e3e</span>;
+                    <span class="hljs-attribute">color</span>: white <span class="hljs-meta">!important</span>;
+                    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.2rem</span> <span class="hljs-number">0.7rem</span>;
+                    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+                  }
+                  </code></div></div></pre>
+              </div>
+              <div class="main-container-content-para">
+                <h2>Testing and Debugging:</h2>
+                <p>No project is complete without testing. Discover effective techniques for testing your contact page across different browsers and devices, and learn how to troubleshoot common issues.</p>
+              </div>
+              <div class="main-container-content-para">
+                <p>Throughout the tutorial, we will explain the concepts and techniques used, ensuring that even beginners can follow along. We'll also provide helpful code snippets and explanations to make the learning process smooth and enjoyable.</p>
+              </div>
+              <div class="main-container-content-para">
+                <p>By the end of this tutorial, you'll have the skills to design and develop a captivating contact page that stands out. Whether you're building a personal portfolio, a business website, or an online store, a well-crafted contact page is essential for fostering user engagement. Join us on this journey to master HTML and CSS while creating a functional and aesthetically pleasing contact page. Let's get started on crafting a page that leaves a lasting impression!</p>
+              </div>
+            </div>
+          </div>
+          <div class="most-popular-side-bar">
+            <div class="aside-bar-section side-bar-1">
+              <div class="recent-secrtion">
+                <p>Recent Post</p>
+              </div>
+              <div class="aside-bar">
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content ">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                      <div class="social-media-icon">
+                        <ul>
+                          <li><a href=""> <i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-youtube"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-linkedin"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="aside-bar-section">
+              <div class="recent-secrtion">
+                <p>Follow Us</p>
+              </div>
+              <div class="aside-bar-social-account">
+                <div class="aside-bar-icon reveal">
+                  <i class="fa-brands fa-instagram"></i>
+                  <h3>1,750</h3>
+                  <p>Followers</p>
+                </div>
+                <div class="aside-bar-icon reveal_second">
+                  <i class="fa-brands fa-youtube"></i>
+                  <h3>212</h3>
+                  <p>Subscriber</p>
+                </div>
+                <div class="aside-bar-icon reveal_third">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <h3>600</h3>
+                  <p>Followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="aside-bar-section">
+              <div class="recent-secrtion">
+                <p>Categories</p>
+              </div>
+              <div class="aside-bar-section-tags">
+                <ul>
+                  <li><a href="">HTML5</a></li>
+                  <li><a href="">CSS3</a></li>
+                  <li><a href="">JavaScript</a></li>
+                  <li><a href="">php</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                  <li><a href="">Navigation Bar</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                  <li><a href="">CSS3</a></li>
+                  <li><a href="">php</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="home-bog-section">
+      <div class="home-blog-box">
+        <div class="recent-secrtion">
+          <p>Related Post</p>
+        </div>
+        <div class="home-blog-post">
+          <div class="home-blog-post-1 reveal">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+          <div class="home-blog-post-1 reveal_second">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+          <div class="home-blog-post-1 reveal_third">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container-section">
+      <div class="gradient-circle">
+        <span class="reveal"></span>
+        <span class="reveal"></span>
+      </div>
+      <div class="footer-container-box">
+        <div class="footer-container-box-1">
+
+          <div class="footer-container-logo">
+            <h2>
+              <a href="">wynk<span>Code</span></a>
+            </h2>
+          </div>
+          <div class="footer-container-logo-details">
+            <p>wynkCode is a blog dedicated to providing valuable and informative content about web development
+              technologies such as HTML, CSS, JavaScript, and PHP... Read more</p>
+          </div>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Company</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-social">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a class="footer-facebook" href="#"><span></span></a></li>
+            <li><a class="footer-instagram" href="#"><span></span></a></li>
+            <li><a class="footer-youtube" href="#"><span></span></a></li>
+            <li><a class="footer-twitter" href="#"><span></span></a></li>
+            <li><a class="footer-linkedin" href="#"><span></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

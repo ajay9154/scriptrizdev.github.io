@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">
+        <nav class="stickynav">
+          <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#">wynk<span class="logo-half-name">Code</span></a></div>
+            <div class="nav-links">
+              <div class="sidebar-logo">
+                <span class="logo-name">wynk<span class="logo-half-name">Code</span></span>
+                <i class='bx bx-x'></i>
+              </div>
+              <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li>
+                  <a href="#">Reference</a>
+                  <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+                  <ul class="htmlCss-sub-menu sub-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">SCSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Shopify</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">Database</a></li>
+                    <li><a href="#">jquery</a></li>
+                    <!--- <li class="more">
+                                        <span><a href="#">More</a>
+                                            <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                        </span>
+                                        <ul class="more-sub-menu sub-menu">
+                                            <li><a href="#">Neumorphism</a></li>
+                                            <li><a href="#">Pre-loader</a></li>
+                                            <li><a href="#">Glassmorphism</a></li>
+                                        </ul>
+                                    </li>-->
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Web Design</a>
+                  <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                  <ul class="htmlCss-sub-menu sub-menu">
+                    <li><a href="#">Website Template</a></li>
+                    <li><a href="#">CSS Templates</a></li>
+                    <li><a href="#">JavaScript Project</a></li>
+                    <li><a href="#">Glassmorphism</a></li>
+                    <li><a href="#">Neumorphism</a></li>
+                    <li><a href="#">Color Pallets</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="search-box">
+              <i class='bx bx-search'></i>
+              <div class="input-box">
+                <input type="text" placeholder="Search...">
+              </div>
+            </div>
+          </div>
+        </nav>
+
+      </header>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src="../js/navscript.js"></script>
+      <script src="../js/sticky.js"></script>
+
+
+      <section>
+        <div class="container">
+          <div class="main-container-content">
+            <div class="flex-box">
+              <div class="main-container-1-content">
+                <div class="main-container-nav-menu">
+                  <ul>
+                    <li><a href="">HTML</a></li>
+                    <span><i class="fa fa-chevron-right"></i></span>
+                    <li><a href="">CSS</a></li>
+                    <span><i class="fa fa-chevron-right"></i></span>
+                    <li><a href="">JavaScript</a></li>
+                    <span><i class="fa fa-chevron-right"></i></span>
+                    <li><a href="">Python</a></li>
+                  </ul>
+                </div>
+                <div class="main-container-main-heading">
+                  <h1>Create Responsive Vertical Thumbnail Slick Slider Using HTML, CSS and JavaScript.</h1>
+                </div>
+                <div class="main-container-user">
+                  <div class="main-container-by small-text">
+                    <a>By</a>
+                  </div>
+                  <div class="main-container-user small-text">
+                    <a>wynkCode</a>
+                    <span> - </span>
+                  </div>
+                  <div class="main-container-date small-text">
+                    <a>May 9, 2023</a>
+                  </div>
+                </div>
+
+                <div class="footer-container-box-social top-social">
+                  <ul>
+                      <li><a class="footer-facebook" href="#"><span></span></a></li>
+                      <li><a class="footer-instagram" href="#"><span></span></a></li>
+                      <li><a class="footer-youtube" href="#"><span></span></a></li>
+                      <li><a class="footer-twitter" href="#"><span></span></a></li>
+                      <li><a class="footer-linkedin" href="#"><span></span></a></li>
+                      <li></li>
+                  </ul>
+              </div>
+                <div class="main-container-img">
+                  <img src="../img/Thumbnail Slider.png" alt="Banner Slick Slider Image">
+                </div>
+                <div class="main-container-content-details">
+                  <div class="main-container-content-para">
+                    <p>Hello readers, Today in this blog you’ll learn how to create a Responsive Vertical Thumbnail Slick Slider using
+                      HTML CSS & jQuery. Earlier I have also shared a blog on how to create an Vertical Thumbnail Slick Slider but this
+                      design is not responsive to mobile devices and there weren’t controls to slide Thumbnail. So today I’m
+                      going to create a Responsive Vertical Thumbnail Slick Slider with control buttons to slide thumbnail.</p>
+                  </div>
+                  <div class="main-container-content-para">
+                    <p>Responsive Vertical Thumbnail Slick Slider is a touch-enabled jQuery plugin that permits you to create beautiful responsive
+                      slick sliders. A slick is a combination of rotating image, or a slideshow, that describes on the
+                      homepage of your store.</p>
+                  </div>
+                  <div class="main-container-content-para">
+                    <p>If you like this program (Responsive Vertical Thumbnail Slick Slider) and want to get source codes. You can easily get
+                      the source codes of this program. To get the source codes you just need to scroll down. You can use
+                      this pre-built Vertical Thumbnail slick slider on your HTML pages, projects, and websites.</p>
+                  </div>
+                  <div class="main-container-content-page-link">
+                    <h3>You might like this</h3>
+                    <ul>
+
+                      <li><a href="">Owl-carousel Card Slider</a></li>
+                      <li><a href="">Owl-carousel Card Slider</a></li>
+                      <li><a href="">Owl-carousel Card</a> </li>
+                      <li><a href="">Owl-carousel Card Slider</a></li>
+                      <li><a href="">Owl-carousel Card der</a></li>
+                    </ul>
+                  </div>
+                  <div class="main-container-content-para">
+                    <h2>Responsive Vertical Thumbnail Slick Slider [Source Codes]</h2>
+                    <p>To create this program (Responsive Vertical Thumbnail Slick Slider). First, you need to create three Files one HTML
+                      File, CSS File and another one is js File. After creating these files just paste the following codes in your
+                      file.</p>
+                  </div>
+                  <div class="main-container-content-para">
+
+                    <p>First, create an HTML file with the name of index.html and paste the given codes in your HTML file.
+                      Remember, you’ve to create a file with .html extension.
+                    </p>
+                  </div>
+                  <div class="main-container-content-code">
+                    <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>html</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>CodePen - Vertical Thumbnail Slick Slider<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./style.css"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wrapper"</span>&gt;</span>
+
+                          <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"banner-section"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vehicle-detail-banner banner-content clearfix"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"banner-slider"</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider slider-for"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider-banner-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Car-Image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider-banner-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Car-Image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider-banner-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=724&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Car-Image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider-banner-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Car-Image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider-banner-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Car-Image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider-banner-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=724&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Car-Image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider-banner-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Car-Image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider-banner-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Car-Image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider-banner-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=724&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Car-Image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider slider-nav thumb-image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbImg"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"slider-img"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbImg"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"slider-img"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbImg"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=724&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"slider-img"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbImg"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"slider-img"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbImg"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"slider-img"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbImg"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=724&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"slider-img"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbImg"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"slider-img"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbImg"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"slider-img"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-image"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbImg"</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=724&amp;q=80"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"slider-img"</span>&gt;</span>
+                                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+                          <span class="hljs-comment">&lt;!-- End User this HTML for Slider --&gt;</span>
+
+                          <span class="hljs-comment">&lt;!-- partial --&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./script.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+                        </code></div></div></pre>
+                  </div>
+                  <div class="main-container-content-para">
+
+                    <p>Second, create a CSS file with the name of style.css and paste the given codes in your css file.
+                      Remember, you’ve to create a file with .css extension.
+                    </p>
+                  </div>
+                  <div class="main-container-content-code">
+                    <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-for</span> {
+                        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-nav</span> {
+                        <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-for</span>,
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-nav</span> {
+                        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-for</span> {
+                        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">5px</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slick-slide</span> <span class="hljs-selector-tag">img</span> {
+                        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider-banner-image</span> {
+                        <span class="hljs-attribute">height</span>: auto;
+                        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-nav</span> {
+                        <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider-nav</span> <span class="hljs-selector-class">.slick-slide</span><span class="hljs-selector-class">.thumbnail-image</span> <span class="hljs-selector-class">.thumbImg</span> <span class="hljs-selector-tag">img</span> {
+                        <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+                        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                        <span class="hljs-attribute">object-fit</span>: cover;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider-banner-image</span> <span class="hljs-selector-tag">img</span> {
+                        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                        <span class="hljs-attribute">height</span>: <span class="hljs-number">350px</span>;
+                        <span class="hljs-attribute">object-fit</span>: cover;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slick-vertical</span> <span class="hljs-selector-class">.slick-slide</span><span class="hljs-selector-pseudo">:active</span>,
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slick-vertical</span> <span class="hljs-selector-class">.slick-slide</span><span class="hljs-selector-pseudo">:focus</span>,
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slick-arrow</span><span class="hljs-selector-pseudo">:hover</span>,
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slick-arrow</span><span class="hljs-selector-pseudo">:focus</span> {
+                        <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+                        <span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider-nav</span> <span class="hljs-selector-class">.slick-slide</span><span class="hljs-selector-class">.slick-current</span> <span class="hljs-selector-tag">span</span> {
+                        <span class="hljs-attribute">color</span>: <span class="hljs-number">#196DB6</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider-nav</span> <span class="hljs-selector-class">.slick-slide</span> {
+                        <span class="hljs-attribute">text-align</span>: center;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider-nav</span> <span class="hljs-selector-class">.slick-slide</span> <span class="hljs-selector-tag">span</span> {
+                        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+                        <span class="hljs-attribute">display</span>: block;
+                        <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">0</span> <span class="hljs-number">15px</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slick-arrow</span> {
+                        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+                        <span class="hljs-attribute">background-color</span>: transparent;
+                        <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+                        <span class="hljs-attribute">background-position</span>: center;
+                        <span class="hljs-attribute">background-repeat</span>: no-repeat;
+                        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0</span>;
+                        <span class="hljs-attribute">height</span>: <span class="hljs-number">18px</span>;
+                        <span class="hljs-attribute">position</span>: absolute;
+                        <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+                        <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+                        <span class="hljs-attribute">z-index</span>: <span class="hljs-number">99</span>;
+                    }
+                    <span class="hljs-selector-class">.slick-prev</span> {
+                        <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+                    }
+                    <span class="hljs-selector-class">.slick-next</span> {
+                        <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+                        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+                    }
+                    <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-nav</span> <span class="hljs-selector-class">.thumbImg</span> {
+                        <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">15px</span>;
+                    }
+                    <span class="hljs-selector-class">.slider-nav</span> <span class="hljs-selector-class">.slick-slide</span><span class="hljs-selector-class">.slick-current</span><span class="hljs-selector-class">.slick-active</span> <span class="hljs-selector-class">.thumbImg</span> <span class="hljs-selector-tag">img</span> {
+                        <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#80D6CF</span>;
+                        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span>;
+                        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FFFFFF</span>;
+                        <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-number">0</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.1</span>), <span class="hljs-number">0</span> <span class="hljs-number">2px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.1</span>);
+                        <span class="hljs-attribute">padding</span>: <span class="hljs-number">3px</span>;
+                    }
+
+                    <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">991px</span>) {
+                        <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-for</span>,
+                        <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-nav</span> {
+                            <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+                            <span class="hljs-attribute">float</span>: none;
+                        }
+                        <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-for</span> {
+                            <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">0</span>;
+                        }
+                        <span class="hljs-selector-class">.banner-slider</span> <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-nav</span> {
+                            <span class="hljs-attribute">height</span>: auto;
+                        }
+                        <span class="hljs-selector-class">.slider-banner-image</span> {
+                            <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+                        }
+                        <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-nav</span><span class="hljs-selector-class">.thumb-image</span> {
+                            <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">30px</span> <span class="hljs-number">0</span>;
+                        }
+                        <span class="hljs-selector-class">.slider-nav</span> <span class="hljs-selector-class">.slick-slide</span> <span class="hljs-selector-tag">span</span> {
+                            <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">0</span>;
+                        }
+                        <span class="hljs-selector-class">.slick-arrow</span> {
+                            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+                            <span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
+                            <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
+                            <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+                            <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+                            -webkit-<span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-<span class="hljs-number">50%</span>) <span class="hljs-built_in">rotate</span>(-<span class="hljs-number">90deg</span>);
+                            -moz-<span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-<span class="hljs-number">50%</span>) <span class="hljs-built_in">rotate</span>(-<span class="hljs-number">90deg</span>);
+                            -ms-<span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-<span class="hljs-number">50%</span>) <span class="hljs-built_in">rotate</span>(-<span class="hljs-number">90deg</span>);
+                            <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-<span class="hljs-number">50%</span>) <span class="hljs-built_in">rotate</span>(-<span class="hljs-number">90deg</span>);
+                        }
+                        <span class="hljs-selector-class">.slick-prev</span> {
+                            <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+                            <span class="hljs-attribute">right</span>: unset;
+                        }
+                        <span class="hljs-selector-class">.slick-next</span> {
+                            <span class="hljs-attribute">left</span>: unset;
+                            <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+                            <span class="hljs-attribute">background-color</span>: transparent;
+                        }
+                        <span class="hljs-selector-class">.vehicle-detail-banner</span> <span class="hljs-selector-class">.car-slider-desc</span> {
+                            <span class="hljs-attribute">max-width</span>: <span class="hljs-number">340px</span>;
+                        }
+                        <span class="hljs-selector-class">.bid-tag</span> {
+                            <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span> <span class="hljs-number">15px</span>;
+                        }
+                        <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-nav</span><span class="hljs-selector-class">.thumb-image</span> {
+                            <span class="hljs-attribute">white-space</span>: nowrap;
+                        }
+                        <span class="hljs-selector-class">.thumbnail-image</span><span class="hljs-selector-class">.slick-slide</span> {
+                            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">5px</span>;
+                            <span class="hljs-attribute">min-width</span>: <span class="hljs-number">75px</span>;
+                            <span class="hljs-attribute">display</span>: inline-block;
+                            <span class="hljs-attribute">float</span>: none;
+                        }
+                    }
+
+                    <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) {
+                        <span class="hljs-selector-class">.slider-banner-image</span> {
+                            <span class="hljs-attribute">height</span>: <span class="hljs-number">400px</span>;
+                        }
+                        <span class="hljs-selector-class">.slider</span><span class="hljs-selector-class">.slider-nav</span><span class="hljs-selector-class">.thumb-image</span> {
+                            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">20px</span> <span class="hljs-number">0</span>;
+                            <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0</span>;
+                        }
+                        <span class="hljs-selector-class">.slider-nav</span> <span class="hljs-selector-class">.slick-slide</span><span class="hljs-selector-class">.thumbnail-image</span> <span class="hljs-selector-class">.thumbImg</span> {
+                            <span class="hljs-attribute">max-width</span>: <span class="hljs-number">140px</span>;
+                            <span class="hljs-attribute">height</span>: <span class="hljs-number">80px</span>;
+                        }
+                        <span class="hljs-selector-class">.slick-prev</span><span class="hljs-selector-class">.slick-arrow</span> {
+                            <span class="hljs-attribute">background-position</span>: center <span class="hljs-number">10px</span>;
+                        }
+                        <span class="hljs-selector-class">.slick-next</span><span class="hljs-selector-class">.slick-arrow</span> {
+                            <span class="hljs-attribute">background-position</span>: center <span class="hljs-number">10px</span>, center;
+                        }
+                        <span class="hljs-selector-class">.slider-nav</span> <span class="hljs-selector-class">.slick-slide</span> <span class="hljs-selector-tag">span</span> {
+                            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+                            <span class="hljs-attribute">white-space</span>: normal;
+                        }
+                    }
+                    </code></div></div></pre>
+                  </div>
+                  <div class="main-container-content-para">
+
+                    <p>Second, create a js file with the name of script.js and paste the given codes in your js file.
+                      Remember, you’ve to create a file with .js extension.
+                    </p>
+                  </div>
+                  <div class="main-container-content-code">
+                    <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>javascript</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-title function_">jQuery</span>(<span class="hljs-variable language_">document</span>).<span class="hljs-title function_">ready</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">$</span>) {
+                        $(<span class="hljs-string">'.slider-for'</span>).<span class="hljs-title function_">slick</span>({
+                            <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">1</span>,
+                            <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">1</span>,
+                            <span class="hljs-attr">arrows</span>: <span class="hljs-literal">false</span>,
+                            <span class="hljs-attr">fade</span>: <span class="hljs-literal">true</span>,
+                            <span class="hljs-attr">asNavFor</span>: <span class="hljs-string">'.slider-nav'</span>
+                        });
+                        $(<span class="hljs-string">'.slider-nav'</span>).<span class="hljs-title function_">slick</span>({
+                            <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">6</span>,
+                            <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">1</span>,
+                            <span class="hljs-attr">asNavFor</span>: <span class="hljs-string">'.slider-for'</span>,
+                            <span class="hljs-attr">dots</span>: <span class="hljs-literal">false</span>,
+                            <span class="hljs-attr">focusOnSelect</span>: <span class="hljs-literal">true</span>,
+                            <span class="hljs-attr">responsive</span>: [{
+                                    <span class="hljs-attr">breakpoint</span>: <span class="hljs-number">992</span>,
+                                    <span class="hljs-attr">settings</span>: {
+                                        <span class="hljs-attr">vertical</span>: <span class="hljs-literal">false</span>,
+                                    }
+                                },
+                                {
+                                    <span class="hljs-attr">breakpoint</span>: <span class="hljs-number">768</span>,
+                                    <span class="hljs-attr">settings</span>: {
+                                        <span class="hljs-attr">vertical</span>: <span class="hljs-literal">false</span>,
+                                    }
+                                },
+                                {
+                                    <span class="hljs-attr">breakpoint</span>: <span class="hljs-number">580</span>,
+                                    <span class="hljs-attr">settings</span>: {
+                                        <span class="hljs-attr">vertical</span>: <span class="hljs-literal">false</span>,
+                                        <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>,
+                                    }
+                                },
+                                {
+                                    <span class="hljs-attr">breakpoint</span>: <span class="hljs-number">380</span>,
+                                    <span class="hljs-attr">settings</span>: {
+                                        <span class="hljs-attr">vertical</span>: <span class="hljs-literal">false</span>,
+                                        <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">2</span>,
+                                    }
+                                }
+                            ]
+                        });
+                    });
+                    </code></div></div></pre>
+                </div>
+
+
+                  <div class="main-container-content-para">
+                    <p>That’s all, now you’ve successfully created a Responsive Vertical Thumbnail Slick Slider using HTML CSS & jQuery.
+                      If your code doesn’t work or you’ve faced any error/problem then please message on Instagram or
+                      contact us from the contact page.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="most-popular-side-bar">
+                <div class="aside-bar-section side-bar-1">
+                  <div class="recent-secrtion">
+                    <p>Recent Post</p>
+                  </div>
+                  <div class="aside-bar">
+                    <div class="aside-bar-box-1 reveal">
+                      <div class="aside-bar-content ">
+                        <div class="aside-bar-content-img">
+                          <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                        </div>
+                        <div class="aside-bar-content-title">
+                          <h4>Website with Login & Registration For</h4>
+                          <p><b>wynkCode</b>May 9, 2023</p>
+                          <div class="social-media-icon">
+                            <ul>
+                              <li><a href=""> <i class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href=""> <i class="fa-brands fa-youtube"></i></a></li>
+                              <li><a href=""> <i class="fa-brands fa-linkedin"></i></a></li>
+                              <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aside-bar-box-1 reveal">
+                      <div class="aside-bar-content">
+                        <div class="aside-bar-content-img">
+                          <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                        </div>
+                        <div class="aside-bar-content-title">
+                          <h4>Website with Login & Registration For</h4>
+                          <p><b>wynkCode</b>May 9, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aside-bar-box-1 reveal">
+                      <div class="aside-bar-content">
+                        <div class="aside-bar-content-img">
+                          <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                        </div>
+                        <div class="aside-bar-content-title">
+                          <h4>Website with Login & Registration For</h4>
+                          <p><b>wynkCode</b>May 9, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aside-bar-box-1 reveal">
+                      <div class="aside-bar-content">
+                        <div class="aside-bar-content-img">
+                          <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                        </div>
+                        <div class="aside-bar-content-title">
+                          <h4>Website with Login & Registration For</h4>
+                          <p><b>wynkCode</b>May 9, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aside-bar-box-1 reveal">
+                      <div class="aside-bar-content">
+                        <div class="aside-bar-content-img">
+                          <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                        </div>
+                        <div class="aside-bar-content-title">
+                          <h4>Website with Login & Registration For</h4>
+                          <p><b>wynkCode</b>May 9, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-section">
+                  <div class="recent-secrtion">
+                    <p>Follow Us</p>
+                  </div>
+                  <div class="aside-bar-social-account">
+                    <div class="aside-bar-icon reveal">
+                      <i class="fa-brands fa-instagram"></i>
+                      <h3>1,750</h3>
+                      <p>Followers</p>
+                    </div>
+                    <div class="aside-bar-icon reveal_second">
+                      <i class="fa-brands fa-youtube"></i>
+                      <h3>212</h3>
+                      <p>Subscriber</p>
+                    </div>
+                    <div class="aside-bar-icon reveal_third">
+                      <i class="fa-brands fa-linkedin"></i>
+                      <h3>600</h3>
+                      <p>Followers</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-section">
+                  <div class="recent-secrtion">
+                    <p>Categories</p>
+                  </div>
+                  <div class="aside-bar-section-tags">
+                    <ul>
+                      <li><a href="">HTML5</a></li>
+                      <li><a href="">CSS3</a></li>
+                      <li><a href="">JavaScript</a></li>
+                      <li><a href="">php</a></li>
+                      <li><a href="">JavaScript Projects</a></li>
+                      <li><a href="">Navigation Bar</a></li>
+                      <li><a href="">Preloader or Loader</a></li>
+                      <li><a href="">Preloader or Loader</a></li>
+                      <li><a href="">JavaScript Projects</a></li>
+                      <li><a href="">CSS3</a></li>
+                      <li><a href="">php</a></li>
+                      <li><a href="">Preloader or Loader</a></li>
+                      <li><a href="">JavaScript Projects</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="home-bog-section">
+          <div class="home-blog-box">
+            <div class="recent-secrtion">
+              <p>Related Post</p>
+            </div>
+            <div class="home-blog-post">
+              <div class="home-blog-post-1 reveal">
+                <div class="aside-bar-content-img">
+                  <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                </div>
+                <div class="aside-bar-content-title" id="subheading">
+                  <h4>Website with Login & Registration For</h4>
+                  <p><b>wynkCode</b>May 9, 2023</p>
+                </div>
+              </div>
+              <div class="home-blog-post-1 reveal_second">
+                <div class="aside-bar-content-img">
+                  <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                </div>
+                <div class="aside-bar-content-title" id="subheading">
+                  <h4>Website with Login & Registration For</h4>
+                  <p><b>wynkCode</b>May 9, 2023</p>
+                </div>
+              </div>
+              <div class="home-blog-post-1 reveal_third">
+                <div class="aside-bar-content-img">
+                  <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                </div>
+                <div class="aside-bar-content-title" id="subheading">
+                  <h4>Website with Login & Registration For</h4>
+                  <p><b>wynkCode</b>May 9, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <footer>
+        <div class="footer-container-section">
+            <div class="gradient-circle">
+                <span class="reveal"></span>
+                <span class="reveal"></span>
+            </div>
+            <div class="footer-container-box">
+                <div class="footer-container-box-1">
+
+                    <div class="footer-container-logo">
+                       <h2>
+                        <a href="">wynk<span>Code</span></a>
+                       </h2>
+                    </div>
+                    <div class="footer-container-logo-details">
+                      <p>wynkCode is a blog dedicated to providing valuable and informative content about web development
+                        technologies such as HTML, CSS, JavaScript, and PHP... Read more</p>
+                    </div>
+                </div>
+                <div class="footer-container-box-1">
+                    <div class="footer-container-box-heading">
+                        <h3>Resources</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#">Sass development</a></li>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">App development</a></li>
+                        <li><a href="#">Sass development</a></li>
+                        <li><a href="#">Web development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container-box-1">
+                    <div class="footer-container-box-heading">
+                        <h3>Company</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#">Sass development</a></li>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">App development</a></li>
+                        <li><a href="#">Sass development</a></li>
+                        <li><a href="#">Web development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container-box-1">
+                    <div class="footer-container-box-heading">
+                        <h3>Resources</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#">Sass development</a></li>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">App development</a></li>
+                        <li><a href="#">Sass development</a></li>
+                        <li><a href="#">Web development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container-box-social">
+                    <div class="footer-container-box-heading">
+                        <h3>Resources</h3>
+                    </div>
+                    <ul>
+                        <li><a class="footer-facebook" href="#"><span></span></a></li>
+                        <li><a class="footer-instagram" href="#"><span></span></a></li>
+                        <li><a class="footer-youtube" href="#"><span></span></a></li>
+                        <li><a class="footer-twitter" href="#"><span></span></a></li>
+                        <li><a class="footer-linkedin" href="#"><span></span></a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

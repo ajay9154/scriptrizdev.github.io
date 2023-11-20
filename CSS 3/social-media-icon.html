@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Testimonial Slider in HTML CSS & JavaScript</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header id="header">
+    <nav class="stickynav">
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo"><a href="#">wynk<span class="logo-half-name">Code</span></a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">wynk<span class="logo-half-name">Code</span></span>
+            <i class='bx bx-x'></i>
+          </div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#">Reference</a>
+              <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">SCSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Shopify</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">jquery</a></li>
+                <!--- <li class="more">
+                                        <span><a href="#">More</a>
+                                            <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                        </span>
+                                        <ul class="more-sub-menu sub-menu">
+                                            <li><a href="#">Neumorphism</a></li>
+                                            <li><a href="#">Pre-loader</a></li>
+                                            <li><a href="#">Glassmorphism</a></li>
+                                        </ul>
+                                    </li>-->
+              </ul>
+            </li>
+            <li>
+              <a href="#">Web Design</a>
+              <i class='bx bxs-chevron-down js-arrow arrow '></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">Website Template</a></li>
+                <li><a href="#">CSS Templates</a></li>
+                <li><a href="#">JavaScript Project</a></li>
+                <li><a href="#">Glassmorphism</a></li>
+                <li><a href="#">Neumorphism</a></li>
+                <li><a href="#">Color Pallets</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search...">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../js/navscript.js"></script>
+  <script src="../js/sticky.js"></script>
+
+
+  <section>
+    <div class="container">
+      <div class="main-container-content">
+        <div class="flex-box">
+          <div class="main-container-1-content">
+            <div class="main-container-nav-menu">
+              <ul>
+                <li><a href="">HTML</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">CSS</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">JavaScript</a></li>
+                <span><i class="fa fa-chevron-right"></i></span>
+                <li><a href="">Python</a></li>
+              </ul>
+            </div>
+            <div class="main-container-main-heading">
+              <h1>Creating Social Media Icons Using HTML and CSS</h1>
+            </div>
+            <div class="main-container-user">
+              <div class="main-container-by small-text">
+                <a>By</a>
+              </div>
+              <div class="main-container-user small-text">
+                <a>wynkCode</a>
+                <span> - </span>
+              </div>
+              <div class="main-container-date small-text">
+                <a>May 9, 2023</a>
+              </div>
+            </div>
+
+            <div class="footer-container-box-social top-social">
+              <ul>
+                <li><a class="footer-facebook" href="#"><span></span></a></li>
+                <li><a class="footer-instagram" href="#"><span></span></a></li>
+                <li><a class="footer-youtube" href="#"><span></span></a></li>
+                <li><a class="footer-twitter" href="#"><span></span></a></li>
+                <li><a class="footer-linkedin" href="#"><span></span></a></li>
+              </ul>
+            </div>
+            <div class="main-container-img">
+              <img src="../img/Social Icon.png" alt="Social Icon BG">
+            </div>
+            <div class="main-container-content-details">
+              <div class="main-container-content-para">
+                <p>"Creating social media icons using HTML and CSS allows you to incorporate attractive and interactive icons representing various social media platforms into your website. With HTML, you can structure the elements of your webpage, while CSS provides the styling and visual enhancements.</p>
+              </div>
+              <div class="main-container-content-para">
+                <p>In this tutorial, you will learn how to design and implement social media icons using HTML and CSS. We will cover the process of creating HTML markup for the icons and then applying CSS styles to customize their appearance, including colors, hover effects, and positioning.</p>
+              </div>
+              <div class="main-container-content-para">
+                <p>By following this tutorial, you will gain the skills to enhance your website's design by adding eye-catching social media icons that link to your social media profiles. Whether you're a beginner or have some experience with HTML and CSS, this tutorial will provide you with the knowledge and guidance to create professional-looking social media icons for your website."</p>
+              </div>
+              <div class="main-container-content-code">
+                <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>html</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+                  
+                  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>wynkCode - Social Media Icons<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"</span>
+                          <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="</span>
+                          <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span> <span class="hljs-attr">referrerpolicy</span>=<span class="hljs-string">"no-referrer"</span> /&gt;</span>
+                  
+                      <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./style.css"</span>&gt;</span>
+                  
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+                  
+                  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"social-menu"</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa-brands fa-youtube"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa-brands fa-instagram"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa-brands fa-linkedin-in"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa-brands fa-github"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+                  
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+                  </code></div></div></pre>
+              </div>
+              
+              <div class="main-container-content-para">
+                <p>You can copy and paste this code into your code editor to apply the specified CSS styles for the social media icons.</p>
+              </div>
+              <div class="main-container-content-code">
+                <pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css">* {
+                  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+                  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+                  <span class="hljs-attribute">box-sizing</span>: border-box;
+              }
+              
+              <span class="hljs-selector-tag">body</span> {
+                  <span class="hljs-attribute">background</span>: <span class="hljs-number">#d8d8d8</span>;
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> {
+                  <span class="hljs-attribute">position</span>: absolute;
+                  <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+                  <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+                  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+                  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+                  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>);
+                  <span class="hljs-attribute">display</span>: flex;
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
+                  <span class="hljs-attribute">list-style</span>: none;
+                  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">15px</span>;
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-class">.fa-brands</span> {
+                  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+                  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">60px</span>;
+                  <span class="hljs-attribute">transition</span>: .<span class="hljs-number">3s</span>;
+                  <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-class">.fa-brands</span><span class="hljs-selector-pseudo">:hover</span> {
+                  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
+                  <span class="hljs-attribute">text-decoration</span>: none;
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">i</span> {
+                  <span class="hljs-attribute">position</span>: relative;
+                  <span class="hljs-attribute">display</span>: block;
+                  <span class="hljs-attribute">width</span>: <span class="hljs-number">60px</span>;
+                  <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+                  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+                  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+                  <span class="hljs-attribute">text-align</span>: center;
+                  <span class="hljs-attribute">transition</span>: .<span class="hljs-number">6s</span>;
+                  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">4px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,.<span class="hljs-number">5</span>);
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">i</span><span class="hljs-selector-pseudo">:hover</span> {
+                  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(<span class="hljs-number">0</span>, -<span class="hljs-number">10%</span>);
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">1</span>) <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">i</span><span class="hljs-selector-pseudo">:hover</span> {
+                  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">190</span>, <span class="hljs-number">14</span>, <span class="hljs-number">14</span>, <span class="hljs-number">0.829</span>);
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">2</span>) <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">i</span><span class="hljs-selector-pseudo">:hover</span> {
+                  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#e44084</span>;
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">i</span><span class="hljs-selector-pseudo">:hover</span> {
+                  <span class="hljs-attribute">color</span>: white;
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">3</span>) <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">i</span><span class="hljs-selector-pseudo">:hover</span> {
+                  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0077b5</span>;
+              }
+              
+              <span class="hljs-selector-class">.social-menu</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">4</span>) <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">i</span><span class="hljs-selector-pseudo">:hover</span> {
+                  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#000</span>;
+              }
+              </code></div></div></pre>
+              </div>
+              <div class="main-container-content-para">
+                <p>Throughout the tutorial, we will explain the concepts and techniques used, ensuring that even beginners can follow along. We'll also provide helpful code snippets and explanations to make the learning process smooth and enjoyable.</p>
+              </div>
+              <div class="main-container-content-para">
+                <p>By the end of this tutorial, you will have a fully functional social midea icon that can be integrated into your website. You'll have a solid understanding of how HTML and CSS work together to create dynamic and engaging components.</p>
+              </div>
+            </div>
+          </div>
+          <div class="most-popular-side-bar">
+            <div class="aside-bar-section side-bar-1">
+              <div class="recent-secrtion">
+                <p>Recent Post</p>
+              </div>
+              <div class="aside-bar">
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content ">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                      <div class="social-media-icon">
+                        <ul>
+                          <li><a href=""> <i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-youtube"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-linkedin"></i></a></li>
+                          <li><a href=""> <i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-bar-box-1">
+                  <div class="aside-bar-content">
+                    <div class="aside-bar-content-img">
+                      <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+                    </div>
+                    <div class="aside-bar-content-title">
+                      <h4>Website with Login & Registration For</h4>
+                      <p><b>wynkCode</b>May 9, 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="aside-bar-section">
+              <div class="recent-secrtion">
+                <p>Follow Us</p>
+              </div>
+              <div class="aside-bar-social-account">
+                <div class="aside-bar-icon reveal">
+                  <i class="fa-brands fa-instagram"></i>
+                  <h3>1,750</h3>
+                  <p>Followers</p>
+                </div>
+                <div class="aside-bar-icon reveal_second">
+                  <i class="fa-brands fa-youtube"></i>
+                  <h3>212</h3>
+                  <p>Subscriber</p>
+                </div>
+                <div class="aside-bar-icon reveal_third">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <h3>600</h3>
+                  <p>Followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="aside-bar-section">
+              <div class="recent-secrtion">
+                <p>Categories</p>
+              </div>
+              <div class="aside-bar-section-tags">
+                <ul>
+                  <li><a href="">HTML5</a></li>
+                  <li><a href="">CSS3</a></li>
+                  <li><a href="">JavaScript</a></li>
+                  <li><a href="">php</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                  <li><a href="">Navigation Bar</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                  <li><a href="">CSS3</a></li>
+                  <li><a href="">php</a></li>
+                  <li><a href="">Preloader or Loader</a></li>
+                  <li><a href="">JavaScript Projects</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="home-bog-section">
+      <div class="home-blog-box">
+        <div class="recent-secrtion">
+          <p>Related Post</p>
+        </div>
+        <div class="home-blog-post">
+          <div class="home-blog-post-1 reveal">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+          <div class="home-blog-post-1 reveal_second">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+          <div class="home-blog-post-1 reveal_third">
+            <div class="aside-bar-content-img">
+              <img src="../img/Website with Login & Registration Form in HTML CSS & JavaScript.jpg">
+            </div>
+            <div class="aside-bar-content-title" id="subheading">
+              <h4>Website with Login & Registration For</h4>
+              <p><b>wynkCode</b>May 9, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container-section">
+      <div class="gradient-circle">
+        <span class="reveal"></span>
+        <span class="reveal"></span>
+      </div>
+      <div class="footer-container-box">
+        <div class="footer-container-box-1">
+
+          <div class="footer-container-logo">
+            <h2>
+              <a href="">wynk<span>Code</span></a>
+            </h2>
+          </div>
+          <div class="footer-container-logo-details">
+            <p>wynkCode is a blog dedicated to providing valuable and informative content about web development
+              technologies such as HTML, CSS, JavaScript, and PHP... Read more</p>
+          </div>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Company</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-1">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Sass development</a></li>
+            <li><a href="#">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer-container-box-social">
+          <div class="footer-container-box-heading">
+            <h3>Resources</h3>
+          </div>
+          <ul>
+            <li><a class="footer-facebook" href="#"><span></span></a></li>
+            <li><a class="footer-instagram" href="#"><span></span></a></li>
+            <li><a class="footer-youtube" href="#"><span></span></a></li>
+            <li><a class="footer-twitter" href="#"><span></span></a></li>
+            <li><a class="footer-linkedin" href="#"><span></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
